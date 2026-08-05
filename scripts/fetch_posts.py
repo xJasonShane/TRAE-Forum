@@ -420,10 +420,10 @@ async def fetch_topic_details(client: ForumClient, topic_id: int) -> Optional[di
         "archived": data.get("archived", False),
     }
 
-async def refresh_all_posts(client: ForumClient, post_ids: set[int]) -> dict[int, dict]:
+async def refresh_posts(client: ForumClient, post_ids: set[int]) -> dict[int, dict]:
     if not post_ids:
         return {}
-    log.info("开始刷新 %d 条帖子的详情（强制获取最新数据）...", len(post_ids))
+    log.info("开始刷新 %d 条帖子的详情...", len(post_ids))
     tasks = [fetch_topic_details(client, tid) for tid in post_ids]
     results: dict[int, dict] = {}
     with tqdm(total=len(tasks), desc="刷新帖子详情") as pbar:
@@ -487,6 +487,53 @@ def load_existing_data() -> tuple[dict, set[int]]:
     except Exception as e:
         log.warning("加载已有数据失败: %s", e)
         return {}, set()
+
+def has_post_changed(post: PostItem, existing: dict) -> bool:
+    """对比列表 API 数据与已有数据，判断帖子是否需要刷新详情。"""
+    return (
+        post.views != existing.get("views", 0)
+        or post.like_count != existing.get("like_count", 0)
+        or post.reply_count != existing.get("reply_count", 0)
+        or post.posts_count != existing.get("posts_count", 0)
+        or post.last_posted_at != existing.get("last_posted_at", "")
+    )
+
+def apply_existing_detail(post: PostItem, existing: dict) -> None:
+    """将已有详情数据复用到帖子（原地更新），保留列表 API 的新鲜分类信息。"""
+    post.title = existing.get("title", post.title)
+    post.excerpt = existing.get("excerpt", post.excerpt)
+    post.image_url = existing.get("image_url", post.image_url)
+    post.tags = existing.get("tags", post.tags)
+    post.views = existing.get("views", post.views)
+    post.like_count = existing.get("like_count", post.like_count)
+    post.reply_count = existing.get("reply_count", post.reply_count)
+    post.posts_count = existing.get("posts_count", post.posts_count)
+    post.last_posted_at = existing.get("last_posted_at", post.last_posted_at)
+    post.pinned = existing.get("pinned", post.pinned)
+    post.closed = existing.get("closed", post.closed)
+    post.archived = existing.get("archived", post.archived)
+
+def determine_posts_to_refresh(
+    posts: list[PostItem],
+    existing_map: dict[int, dict],
+) -> tuple[set[int], int]:
+    """确定需要刷新详情的帖子。
+    - 新帖子或有变化的帖子 → 加入刷新集合（有变化时先复用已有详情作为基础，刷新失败仍有完整数据）
+    - 无变化的帖子 → 直接复用已有详情
+    返回 (需刷新的ID集合, 复用数量)。
+    """
+    ids_to_refresh: set[int] = set()
+    reused = 0
+    for post in posts:
+        existing = existing_map.get(post.id)
+        if not existing or has_post_changed(post, existing):
+            if existing:
+                apply_existing_detail(post, existing)
+            ids_to_refresh.add(post.id)
+        else:
+            apply_existing_detail(post, existing)
+            reused += 1
+    return ids_to_refresh, reused
 
 def merge_posts(existing: dict, new_posts: list[PostItem]) -> list[PostItem]:
     if not existing:
@@ -629,14 +676,21 @@ async def main():
         )
         log.info("筛选后: %d 条有效帖子, %d 条已排除", len(filtered_topics), excluded_count)
 
-        # 7. 强制刷新所有帖子详情（确保标题、浏览量等数据为最新）
-        all_post_ids = {p.id for p in filtered_topics}
-        if all_post_ids:
-            log.info("[4/4] 强制刷新所有帖子详情...")
-            refresh_data = await refresh_all_posts(client, all_post_ids)
+        # 7. 增量刷新帖子详情（仅更新有变化的帖子）
+        existing_data, _ = load_existing_data()
+        existing_map = {p["id"]: p for p in existing_data.get("posts", []) if p.get("id")}
+
+        ids_to_refresh, reused_count = determine_posts_to_refresh(
+            filtered_topics, existing_map
+        )
+        log.info("[4/4] 增量刷新帖子详情: %d 条需刷新, %d 条复用已有数据",
+                 len(ids_to_refresh), reused_count)
+
+        if ids_to_refresh:
+            refresh_data = await refresh_posts(client, ids_to_refresh)
             filtered_topics = apply_refresh_data(filtered_topics, refresh_data, cat_map, sub_cat_map)
-        else:
-            log.info("[4/4] 无帖子，跳过详情刷新")
+        elif not filtered_topics:
+            log.info("无帖子，跳过详情刷新")
 
         # 8. 构建输出
         output = build_output_data(
