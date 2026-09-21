@@ -2,8 +2,8 @@
 
 从 TRAE 官方中文社区抓取用户帖子，支持：
 - 异步并发抓取，大幅提升速度
-- 全量同步，每次强制获取所有帖子最新数据
-- 帖子详情刷新，确保标题、浏览量等字段实时同步
+- 增量更新，仅对新增或数据变化的帖子刷新详情
+- 未变化帖子复用已有详情，减少 API 调用
 - 结构化日志输出
 - Pydantic 数据校验
 - 进度条显示
@@ -15,13 +15,12 @@ import logging
 import os
 import sys
 import time
-from dataclasses import dataclass, field
 from html import unescape
 from pathlib import Path
 from typing import Optional
 
 import aiohttp
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field
 from tqdm import tqdm
 
 # ──────────────────────────────────────────────
@@ -535,24 +534,6 @@ def determine_posts_to_refresh(
             reused += 1
     return ids_to_refresh, reused
 
-def merge_posts(existing: dict, new_posts: list[PostItem]) -> list[PostItem]:
-    if not existing:
-        return new_posts
-
-    old_posts = {p["id"]: p for p in existing.get("posts", []) if p.get("id")}
-    merged: dict[int, dict] = {}
-
-    for post in new_posts:
-        merged[post.id] = post.model_dump()
-
-    for pid, post in old_posts.items():
-        if pid not in merged:
-            merged[pid] = post
-
-    result = [PostItem(**p) for p in merged.values()]
-    result.sort(key=lambda x: x.created_at, reverse=True)
-    return result
-
 # ──────────────────────────────────────────────
 # 输出
 # ──────────────────────────────────────────────
@@ -621,8 +602,11 @@ def build_output_data(
 
 def save_output_file(output: OutputData) -> Path:
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
-    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+    # 先写临时文件再原子替换，避免进程中断产生损坏的 posts.json
+    tmp_path = OUTPUT_PATH.with_suffix(".json.tmp")
+    with open(tmp_path, "w", encoding="utf-8") as f:
         json.dump(output.model_dump(by_alias=True), f, ensure_ascii=False, indent=2)
+    os.replace(tmp_path, OUTPUT_PATH)
     return OUTPUT_PATH
 
 # ──────────────────────────────────────────────
