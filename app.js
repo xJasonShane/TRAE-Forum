@@ -23,6 +23,8 @@
     close: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6L6 18M6 6l12 12"/></svg>',
     calendar: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>',
     refresh: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 4 23 10 17 10"/><polyline points="1 20 1 14 7 14"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>',
+    star: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>',
+    starFilled: '<svg viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>',
   };
 
   // ──────────────────────────────────────────
@@ -32,8 +34,11 @@
   const CONFIG_PATH = 'config.json';
   const DEFAULT_CAT = { color: '#9BA3B5', soft: '#EDF0F7', icon: '📁', visible: true };
   const STORAGE_KEY = 'trae-posts-prefs';
+  const FAV_CAT = '__fav'; // "我的收藏"虚拟分类标识，不与论坛分类名冲突
   const DEBOUNCE_MS = 200;
   const VIRTUAL_THRESHOLD = 100; // 超过此数量启用虚拟滚动
+  const CHART_JS_URL = 'https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js';
+  const CHART_JS_SRI = 'sha384-e6nUZLBkQ86NJ6TVVKAeSaK8jWa3NhkYWZFomE39AvDbQWeie9PlQqM3pmYW5d1g';
 
   // ──────────────────────────────────────────
   // 应用状态
@@ -43,11 +48,13 @@
     filteredPosts: [],
     catConfig: {},
     activeCategory: 'all',
+    activeTags: [],
     searchQuery: '',
     currentSort: 'newest',
     currentView: 'columns',
     theme: 'light',
     updatedAt: '',
+    favorites: new Set(), // 本地收藏的帖子 ID 集合
     showStats: false,
     calendarYear: new Date().getFullYear(),
     calendarMonth: new Date().getMonth(),
@@ -55,6 +62,8 @@
     refreshTimer: null,
     isRefreshing: false,
     visibilityHooked: false,
+    dataETag: null,           // posts.json 协商缓存：ETag
+    dataLastModified: null,   // posts.json 协商缓存：Last-Modified
     REFRESH_INTERVAL: 5 * 60 * 1000,
   };
 
@@ -103,6 +112,16 @@
     return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;');
   }
 
+  // 关键词高亮：按原文切分匹配，每段单独转义后输出，兼容 XSS 转义与大小写不敏感匹配
+  function highlight(text, q) {
+    if (!text) return '';
+    if (!q) return esc(text);
+    var re = new RegExp('(' + String(q).replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+    return String(text).split(re).map(function(part, i) {
+      return i % 2 === 1 ? '<mark>' + esc(part) + '</mark>' : esc(part);
+    }).join('');
+  }
+
   function debounce(fn, ms) {
     var timer;
     return function() {
@@ -122,6 +141,7 @@
         if (prefs.theme) state.theme = prefs.theme;
         if (prefs.currentSort) state.currentSort = prefs.currentSort;
         if (prefs.currentView) state.currentView = prefs.currentView;
+        if (Array.isArray(prefs.favorites)) state.favorites = new Set(prefs.favorites);
       }
     } catch(e) { /* ignore */ }
   }
@@ -132,6 +152,7 @@
         theme: state.theme,
         currentSort: state.currentSort,
         currentView: state.currentView,
+        favorites: Array.from(state.favorites),
       }));
     } catch(e) { /* ignore */ }
   }
@@ -145,6 +166,7 @@
     var params = new URLSearchParams(hash);
     if (params.has('q')) state.searchQuery = params.get('q');
     if (params.has('cat')) state.activeCategory = params.get('cat');
+    if (params.has('tags')) state.activeTags = params.get('tags').split(',').filter(Boolean);
     if (params.has('sort')) state.currentSort = params.get('sort');
     if (params.has('view')) state.currentView = params.get('view');
     if (params.has('theme')) state.theme = params.get('theme');
@@ -153,7 +175,9 @@
   function saveToURL() {
     var params = new URLSearchParams();
     if (state.searchQuery) params.set('q', state.searchQuery);
-    if (state.activeCategory !== 'all') params.set('cat', state.activeCategory);
+    // 收藏视图不进 URL：收藏数据仅存于本机 localStorage，分享该状态无意义
+    if (state.activeCategory !== 'all' && state.activeCategory !== FAV_CAT) params.set('cat', state.activeCategory);
+    if (state.activeTags.length) params.set('tags', state.activeTags.join(','));
     if (state.currentSort !== 'newest') params.set('sort', state.currentSort);
     if (state.currentView !== 'columns') params.set('view', state.currentView);
     if (state.theme !== 'light') params.set('theme', state.theme);
@@ -186,7 +210,8 @@
     q = q.toLowerCase();
     return (p.title && p.title.toLowerCase().indexOf(q) !== -1) ||
            (p.excerpt && p.excerpt.toLowerCase().indexOf(q) !== -1) ||
-           (p.category_name && p.category_name.toLowerCase().indexOf(q) !== -1);
+           (p.category_name && p.category_name.toLowerCase().indexOf(q) !== -1) ||
+           (p.tags && p.tags.length && p.tags.some(function(t) { return t.toLowerCase().indexOf(q) !== -1; }));
   }
 
   // ──────────────────────────────────────────
@@ -206,11 +231,33 @@
   }
 
   // ──────────────────────────────────────────
+  // config.visible 前端二次过滤
+  // ──────────────────────────────────────────
+  // 爬虫端已按 visible 排除分类，此处兜底处理 posts.json 与 config.json 短暂不同步的窗口期
+  function visiblePosts(posts) {
+    return posts.filter(function(p) { return cc(p.category_name).visible !== false; });
+  }
+
+  // ──────────────────────────────────────────
   // 过滤帖子
   // ──────────────────────────────────────────
   function filterPosts() {
     state.filteredPosts = state.allPosts.filter(function(p) {
-      if (state.activeCategory !== 'all' && p.category_name !== state.activeCategory) return false;
+      if (state.activeCategory === FAV_CAT) {
+        // 收藏视图：仅保留本地收藏的帖子
+        if (!state.favorites.has(p.id)) return false;
+      } else if (state.activeCategory !== 'all' && p.category_name !== state.activeCategory) {
+        return false;
+      }
+      // 标签筛选：任一选中标签命中即保留（并集语义）
+      if (state.activeTags.length) {
+        var tags = p.tags || [];
+        var hit = false;
+        for (var i = 0; i < state.activeTags.length; i++) {
+          if (tags.indexOf(state.activeTags[i]) !== -1) { hit = true; break; }
+        }
+        if (!hit) return false;
+      }
       if (state.searchQuery && !matchSearch(p, state.searchQuery)) return false;
       return true;
     });
@@ -237,14 +284,17 @@
     if (ws) bh += '<span class="header-badge">🔗 <a href="' + esc(ws) + '" target="_blank" rel="noopener">' + esc(user.website) + '</a></span>';
     document.getElementById('badges').innerHTML = bh;
 
+    var visible = visiblePosts(data.posts || []);
     document.getElementById('stats-bar').style.display = 'flex';
-    document.getElementById('stat-posts').textContent = data.total_posts || 0;
+    document.getElementById('stat-posts').textContent = visible.length;
 
     var tv = 0, tl = 0;
-    (data.posts||[]).forEach(function(p) { tv += p.views||0; tl += p.like_count||0; });
+    visible.forEach(function(p) { tv += p.views||0; tl += p.like_count||0; });
     document.getElementById('stat-views').textContent = fmt(tv);
     document.getElementById('stat-likes').textContent = fmt(tl);
-    document.getElementById('stat-cats').textContent = Object.keys(data.categories||{}).length;
+    var catSet = {};
+    visible.forEach(function(p) { catSet[p.category_name] = true; });
+    document.getElementById('stat-cats').textContent = Object.keys(catSet).length;
 
     if (data.updated_at) {
       state.updatedAt = data.updated_at;
@@ -261,14 +311,22 @@
       ? state.allPosts.filter(function(p) { return matchSearch(p, state.searchQuery); })
       : state.allPosts;
 
-    var h = '<button class="cat-tab' + (state.activeCategory === 'all' ? ' active' : '') + '" data-cat="all"><span class="dot" style="background:linear-gradient(135deg,var(--accent),var(--teal))"></span>全部 <span class="cnt">' + filtered.length + '</span></button>';
+    var h = '<button class="cat-tab' + (state.activeCategory === 'all' ? ' active' : '') + '" data-cat="all" aria-pressed="' + (state.activeCategory === 'all') + '"><span class="dot" style="background:linear-gradient(135deg,var(--accent),var(--teal))"></span>全部 <span class="cnt">' + filtered.length + '</span></button>';
+
+    // "我的收藏"虚拟分类：仅在存在收藏时显示，计数基于当前搜索命中的收藏帖
+    if (state.favorites.size > 0) {
+      var favCount = 0;
+      filtered.forEach(function(p) { if (state.favorites.has(p.id)) favCount++; });
+      var favActive = state.activeCategory === FAV_CAT;
+      h += '<button class="cat-tab fav-tab' + (favActive ? ' active' : '') + '" data-cat="' + FAV_CAT + '" aria-pressed="' + favActive + '" title="查看本地收藏的帖子"><span class="dot" style="background:var(--amber)"></span>⭐ 收藏 <span class="cnt">' + favCount + '</span></button>';
+    }
 
     var grouped = {};
     filtered.forEach(function(p) { grouped[p.category_name] = (grouped[p.category_name] || 0) + 1; });
     var sorted = Object.entries(grouped).sort(function(a,b){return b[1]-a[1];});
     sorted.forEach(function(e) {
       var c = cc(e[0]);
-      h += '<button class="cat-tab' + (state.activeCategory === e[0] ? ' active' : '') + '" data-cat="' + esc(e[0]) + '"><span class="dot" style="background:' + c.color + '"></span>' + esc(e[0]) + ' <span class="cnt">' + e[1] + '</span></button>';
+      h += '<button class="cat-tab' + (state.activeCategory === e[0] ? ' active' : '') + '" data-cat="' + esc(e[0]) + '" aria-pressed="' + (state.activeCategory === e[0]) + '"><span class="dot" style="background:' + c.color + '"></span>' + esc(e[0]) + ' <span class="cnt">' + e[1] + '</span></button>';
     });
     list.innerHTML = h;
 
@@ -281,6 +339,79 @@
         searchResults.style.display = 'none';
       }
     }
+
+    // 标签栏与分类栏同步刷新
+    updateTagBar();
+  }
+
+  // ──────────────────────────────────────────
+  // 标签筛选栏
+  // 计数基于"除标签外的其他过滤条件已生效"的基准集合，选中标签即使计数为 0 也保留显示
+  // ──────────────────────────────────────────
+  function updateTagBar() {
+    var bar = document.getElementById('tag-list');
+    if (!bar) return;
+
+    var base = state.allPosts.filter(function(p) {
+      if (state.activeCategory === FAV_CAT) {
+        if (!state.favorites.has(p.id)) return false;
+      } else if (state.activeCategory !== 'all' && p.category_name !== state.activeCategory) {
+        return false;
+      }
+      if (state.searchQuery && !matchSearch(p, state.searchQuery)) return false;
+      return true;
+    });
+
+    var counts = {};
+    base.forEach(function(p) {
+      (p.tags || []).forEach(function(t) { counts[t] = (counts[t] || 0) + 1; });
+    });
+    state.activeTags.forEach(function(t) { if (!(t in counts)) counts[t] = 0; });
+
+    var sorted = Object.keys(counts).sort(function(a, b) { return counts[b] - counts[a]; });
+    if (!sorted.length) {
+      bar.style.display = 'none';
+      bar.innerHTML = '';
+      return;
+    }
+
+    var h = '<span class="tag-bar-label">🏷 标签</span>';
+    sorted.forEach(function(t) {
+      var active = state.activeTags.indexOf(t) !== -1;
+      h += '<button class="tag-chip' + (active ? ' active' : '') + '" data-tag="' + esc(t) + '" aria-pressed="' + active + '" title="按标签筛选（可多选，并集生效）">' + esc(t) + ' <span class="cnt">' + counts[t] + '</span></button>';
+    });
+    bar.innerHTML = h;
+    bar.style.display = '';
+  }
+
+  // ──────────────────────────────────────────
+  // 本地收藏
+  // ──────────────────────────────────────────
+  function favBtnHtml(p) {
+    var active = state.favorites.has(p.id);
+    return '<button class="fav-btn' + (active ? ' active' : '') + '" data-fav-id="' + p.id + '" aria-pressed="' + active + '" aria-label="' + (active ? '取消收藏' : '收藏') + '" title="收藏（仅保存在本机）">' + (active ? ICONS.starFilled : ICONS.star) + '</button>';
+  }
+
+  function toggleFavorite(id) {
+    id = Number(id);
+    if (state.favorites.has(id)) state.favorites.delete(id); else state.favorites.add(id);
+    savePrefs();
+
+    // 局部更新同帖按钮状态，避免整体重渲染导致滚动位置丢失
+    var active = state.favorites.has(id);
+    document.querySelectorAll('[data-fav-id="' + id + '"]').forEach(function(b) {
+      b.classList.toggle('active', active);
+      b.setAttribute('aria-pressed', String(active));
+      b.setAttribute('aria-label', active ? '取消收藏' : '收藏');
+      b.innerHTML = active ? ICONS.starFilled : ICONS.star;
+    });
+
+    // 收藏视图下帖子集合随收藏变化需要重渲染；清空收藏时自动切回"全部"
+    if (state.activeCategory === FAV_CAT) {
+      if (!state.favorites.size) state.activeCategory = 'all';
+      renderPosts();
+    }
+    updateCatTabs();
   }
 
   // ──────────────────────────────────────────
@@ -289,7 +420,8 @@
   function buildItem(p) {
     var c = cc(p.category_name);
     var h = '<a class="post-item" href="' + esc(safeUrl(p.url)) + '" target="_blank" rel="noopener">';
-    h += '<div class="post-item-title">' + esc(p.title);
+    h += favBtnHtml(p);
+    h += '<div class="post-item-title">' + highlight(p.title, state.searchQuery);
     if (p.pinned) h += '<span class="post-item-pin">📌</span>';
     h += '</div>';
     h += '<div class="post-item-meta">';
@@ -304,6 +436,7 @@
     var c = cc(p.category_name);
     var img = safeUrl(p.image_url);
     var h = '<a class="flat-card" href="' + esc(safeUrl(p.url)) + '" target="_blank" rel="noopener" style="animation-delay:' + Math.min(i * 0.03, 0.5) + 's">';
+    h += favBtnHtml(p);
     if (img) {
       h += '<div class="flat-card-img-wrap"><img class="flat-card-img" src="' + esc(img) + '" alt="" loading="lazy" data-cat="' + esc(p.category_name) + '"></div>';
     } else {
@@ -311,8 +444,8 @@
     }
     h += '<div class="flat-card-body">';
     h += '<span class="flat-card-cat" style="background:' + c.soft + ';color:' + c.color + '">' + esc(p.category_name) + '</span>';
-    h += '<div class="flat-card-title">' + esc(p.title) + '</div>';
-    if (p.excerpt) h += '<div class="flat-card-excerpt">' + esc(p.excerpt) + '</div>';
+    h += '<div class="flat-card-title">' + highlight(p.title, state.searchQuery) + '</div>';
+    if (p.excerpt) h += '<div class="flat-card-excerpt">' + highlight(p.excerpt, state.searchQuery) + '</div>';
     h += '<div class="flat-card-footer">';
     h += '<div class="flat-card-stats">';
     h += '<span>' + ICONS.eye + fmt(p.views) + '</span>';
@@ -450,9 +583,9 @@
 
     var h = '<div class="cal-view">';
     h += '<div class="cal-header">';
-    h += '<button class="cal-nav-btn" id="cal-prev">' + ICONS.up + '</button>';
+    h += '<button class="cal-nav-btn" id="cal-prev" aria-label="上一个月">' + ICONS.up + '</button>';
     h += '<span class="cal-month-title">' + year + '年 ' + monthNames[month] + '</span>';
-    h += '<button class="cal-nav-btn" id="cal-next">' + ICONS.up + '</button>';
+    h += '<button class="cal-nav-btn" id="cal-next" aria-label="下一个月">' + ICONS.up + '</button>';
     h += '</div>';
     h += '<div class="cal-weekdays">';
     var weekdays = ['日','一','二','三','四','五','六'];
@@ -490,7 +623,7 @@
       if (isToday) cls += ' cal-today';
       if (isSelected) cls += ' cal-day-selected';
 
-      h += '<div class="' + cls + '" data-date="' + dateKey + '">';
+      h += '<div class="' + cls + '" data-date="' + dateKey + '"' + (posts.length ? ' role="button" tabindex="0" aria-label="' + dateKey + '，' + posts.length + '篇帖子"' : '') + '>';
       h += '<span class="cal-day-num">' + dayNum + '</span>';
       if (posts.length) {
         var catSet = {};
@@ -536,6 +669,13 @@
         state.calendarSelectedDate = state.calendarSelectedDate === date ? null : date;
         renderPosts();
       });
+      // 键盘可达性：Enter / Space 触发与点击一致的选择行为
+      el.addEventListener('keydown', function(ev) {
+        if (ev.key === 'Enter' || ev.key === ' ') {
+          ev.preventDefault();
+          el.click();
+        }
+      });
     });
   }
 
@@ -564,14 +704,101 @@
 
     if (state.showStats) {
       panel.classList.add('show');
+      renderHeatmap();
       renderCharts();
     } else {
       panel.classList.remove('show');
     }
   }
 
+  // ──────────────────────────────────────────
+  // 发帖热力图（GitHub 风格，近 52 周）
+  // 纯前端聚合 created_at，不依赖 Chart.js，CDN 失败时仍可用
+  // ──────────────────────────────────────────
+  function renderHeatmap() {
+    var wrap = document.getElementById('heatmap');
+    var monthsEl = document.getElementById('hm-months');
+    if (!wrap || !monthsEl) return;
+
+    // 按本地日期聚合每日发帖数
+    var counts = {};
+    state.allPosts.forEach(function(p) {
+      if (!p.created_at) return;
+      var d = new Date(p.created_at);
+      var key = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+      counts[key] = (counts[key] || 0) + 1;
+    });
+
+    var today = new Date();
+    var end = new Date(today.getFullYear(), today.getMonth(), today.getDate());
+    var start = new Date(end);
+    start.setDate(start.getDate() - 364);
+    start.setDate(start.getDate() - start.getDay()); // 对齐到周日
+
+    var cells = '';
+    var monthLabels = [];
+    var lastMonth = -1;
+    var idx = 0;
+    var d = new Date(start);
+    while (d <= end) {
+      var key = d.getFullYear() + '-' + String(d.getMonth()+1).padStart(2,'0') + '-' + String(d.getDate()).padStart(2,'0');
+      var n = counts[key] || 0;
+      var lvl = n >= 5 ? 4 : n; // 阈值：1/2/3/4+
+      cells += '<span class="hm-cell hm-l' + lvl + '" title="' + key + '：' + n + ' 篇帖子"></span>';
+      if (d.getMonth() !== lastMonth) {
+        lastMonth = d.getMonth();
+        var col = Math.floor(idx / 7);
+        if (col >= 1) monthLabels.push({ col: col, name: (d.getMonth() + 1) + '月' });
+      }
+      idx++;
+      d.setDate(d.getDate() + 1);
+    }
+    wrap.innerHTML = cells;
+
+    // 月份标签：单元格步长 12px + 3px 间距 = 15px，绝对定位到对应周列
+    var monthsHtml = '';
+    monthLabels.forEach(function(m) {
+      monthsHtml += '<span style="left:' + (m.col * 15) + 'px">' + m.name + '</span>';
+    });
+    monthsEl.innerHTML = monthsHtml;
+  }
+
+  // Chart.js 按需加载：首次打开统计面板才请求 CDN；Promise 缓存避免重复加载，失败后重开面板可重试
+  var chartJsLoader = null;
+
+  function loadChartJs() {
+    if (window.Chart) return Promise.resolve();
+    if (!chartJsLoader) {
+      chartJsLoader = new Promise(function(resolve, reject) {
+        var s = document.createElement('script');
+        s.src = CHART_JS_URL;
+        s.integrity = CHART_JS_SRI;
+        s.crossOrigin = 'anonymous';
+        s.onload = function() { resolve(); };
+        s.onerror = function() { chartJsLoader = null; reject(new Error('Chart.js 加载失败')); };
+        document.head.appendChild(s);
+      });
+    }
+    return chartJsLoader;
+  }
+
   function renderCharts() {
-    if (typeof Chart === 'undefined') return;
+    loadChartJs().then(function() {
+      // 面板可能在加载期间被关闭，绘制前确认仍处于打开状态
+      if (state.showStats) drawCharts();
+    }).catch(function(e) {
+      console.warn('Chart.js 加载失败:', e);
+      showChartsFallback();
+    });
+  }
+
+  function showChartsFallback() {
+    var charts = document.querySelector('.stats-charts');
+    if (charts) charts.innerHTML = '<div class="charts-fallback">📊 图表组件加载失败，请检查网络后重新打开统计面板重试</div>';
+  }
+
+  function drawCharts() {
+    if (typeof Chart === 'undefined') { showChartsFallback(); return; }
 
     // 分类分布饼图
     var catCtx = document.getElementById('chart-categories');
@@ -739,12 +966,19 @@
   // ──────────────────────────────────────────
   // 视图切换
   // ──────────────────────────────────────────
+  // 统一同步视图按钮的 active 类与 aria-pressed 状态（init 与 setView 共用）
+  function syncViewButtons(view) {
+    [['view-columns', 'columns'], ['view-flat', 'flat'], ['view-calendar', 'calendar']].forEach(function(pair) {
+      var el = document.getElementById(pair[0]);
+      el.classList.toggle('active', view === pair[1]);
+      el.setAttribute('aria-pressed', String(view === pair[1]));
+    });
+  }
+
   function setView(view) {
     state.currentView = view;
     if (view === 'calendar') state.calendarSelectedDate = null;
-    document.getElementById('view-columns').classList.toggle('active', view === 'columns');
-    document.getElementById('view-flat').classList.toggle('active', view === 'flat');
-    document.getElementById('view-calendar').classList.toggle('active', view === 'calendar');
+    syncViewButtons(view);
     renderPosts();
     savePrefs();
     saveToURL();
@@ -788,6 +1022,27 @@
       saveToURL();
     });
 
+    // 标签筛选（多选，并集语义，再次点击取消）
+    document.getElementById('tag-list').addEventListener('click', function(e) {
+      var btn = e.target.closest('.tag-chip');
+      if (!btn) return;
+      var tag = btn.dataset.tag;
+      var i = state.activeTags.indexOf(tag);
+      if (i === -1) state.activeTags.push(tag); else state.activeTags.splice(i, 1);
+      updateTagBar();
+      renderPosts();
+      saveToURL();
+    });
+
+    // 收藏按钮（委托至 content 容器，卡片/列表/日历视图通用；阻止冒泡避免触发外层链接跳转）
+    document.getElementById('content').addEventListener('click', function(e) {
+      var btn = e.target.closest('.fav-btn');
+      if (!btn) return;
+      e.preventDefault();
+      e.stopPropagation();
+      toggleFavorite(btn.dataset.favId);
+    });
+
     // 排序
     var sortSelect = document.getElementById('sort-select');
     sortSelect.value = state.currentSort;
@@ -812,6 +1067,30 @@
     // 导出按钮
     document.getElementById('export-csv').addEventListener('click', function() { exportData('csv'); });
     document.getElementById('export-json').addEventListener('click', function() { exportData('json'); });
+
+    // 导出菜单下拉（同步 aria-expanded 供屏幕阅读器感知展开状态）
+    var exportBtn = document.getElementById('export-menu-btn');
+    var exportDropdown = document.getElementById('export-dropdown');
+    exportBtn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      var open = exportDropdown.style.display === 'none';
+      exportDropdown.style.display = open ? 'block' : 'none';
+      exportBtn.setAttribute('aria-expanded', String(open));
+    });
+    document.addEventListener('click', function() {
+      exportDropdown.style.display = 'none';
+      exportBtn.setAttribute('aria-expanded', 'false');
+    });
+    exportDropdown.addEventListener('click', function(e) {
+      e.stopPropagation();
+      exportDropdown.style.display = 'none';
+      exportBtn.setAttribute('aria-expanded', 'false');
+    });
+
+    // 快捷键提示（2s 后显示，8s 后隐藏）
+    var hint = document.getElementById('shortcut-hint');
+    setTimeout(function() { hint.classList.add('show'); }, 2000);
+    setTimeout(function() { hint.classList.remove('show'); }, 8000);
 
     // 统计面板
     document.getElementById('stats-toggle').addEventListener('click', function() {
@@ -862,6 +1141,26 @@
   // ──────────────────────────────────────────
   // 数据刷新
   // ──────────────────────────────────────────
+  // 拉取 posts.json，支持 ETag / Last-Modified 条件请求（协商缓存）：
+  // - useConditional=true 时带上 If-None-Match / If-Modified-Since 头，
+  //   数据未变化时服务器返回 304（空响应体），显著减少轮询带宽
+  // - 服务器不支持条件请求时退化为普通 200 全量响应，行为无害
+  // - 移除了原先的 ?t= 时间戳参数，避免每次轮询都绕过浏览器缓存全量下载
+  function fetchData(useConditional) {
+    var headers = {};
+    if (useConditional) {
+      if (state.dataETag) headers['If-None-Match'] = state.dataETag;
+      if (state.dataLastModified) headers['If-Modified-Since'] = state.dataLastModified;
+    }
+    return fetch(DATA_PATH, { headers: headers }).then(function(r) {
+      if (r.status === 304) return { notModified: true };
+      if (!r.ok) throw new Error('HTTP ' + r.status);
+      state.dataETag = r.headers.get('ETag') || null;
+      state.dataLastModified = r.headers.get('Last-Modified') || null;
+      return r.json().then(function(data) { return { data: data }; });
+    });
+  }
+
   function refreshData() {
     if (state.isRefreshing) return;
     state.isRefreshing = true;
@@ -869,12 +1168,15 @@
     var btn = document.getElementById('refresh-btn');
     if (btn) btn.classList.add('spinning');
 
-    fetch(DATA_PATH + '?t=' + Date.now())
-      .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-      .then(function(data) {
+    fetchData(true)
+      .then(function(res) {
+        // 304：数据无变化，跳过解析与重渲染
+        if (res.notModified) return;
+
+        var data = res.data;
         if (!data || !data.posts) return;
 
-        state.allPosts = data.posts || [];
+        state.allPosts = visiblePosts(data.posts || []);
 
         if (data.updated_at) {
           state.updatedAt = data.updated_at;
@@ -885,7 +1187,10 @@
         updateCatTabs();
         renderPosts();
       })
-      .catch(function(e) { console.warn('刷新数据失败:', e); })
+      .catch(function(e) {
+        console.warn('刷新数据失败:', e);
+        showToast('⚠️ 刷新失败，当前显示的仍是上次数据');
+      })
       .finally(function() {
         state.isRefreshing = false;
         if (btn) btn.classList.remove('spinning');
@@ -913,6 +1218,26 @@
   }
 
   // ──────────────────────────────────────────
+  // Toast 通知（单例，避免堆叠；用于刷新失败等非致命提示）
+  // ──────────────────────────────────────────
+  var toastTimer = null;
+  function showToast(msg) {
+    var toast = document.getElementById('toast');
+    if (!toast) {
+      toast = document.createElement('div');
+      toast.id = 'toast';
+      toast.className = 'toast';
+      toast.setAttribute('role', 'status');
+      toast.setAttribute('aria-live', 'polite');
+      document.body.appendChild(toast);
+    }
+    toast.textContent = msg;
+    toast.classList.add('show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function() { toast.classList.remove('show'); }, 3000);
+  }
+
+  // ──────────────────────────────────────────
   // 初始化
   // ──────────────────────────────────────────
   function init() {
@@ -923,16 +1248,8 @@
     // 应用主题
     applyTheme(state.theme);
 
-    // 应用视图状态
-    if (state.currentView === 'flat') {
-      document.getElementById('view-flat').classList.add('active');
-      document.getElementById('view-columns').classList.remove('active');
-      document.getElementById('view-calendar').classList.remove('active');
-    } else if (state.currentView === 'calendar') {
-      document.getElementById('view-calendar').classList.add('active');
-      document.getElementById('view-columns').classList.remove('active');
-      document.getElementById('view-flat').classList.remove('active');
-    }
+    // 应用视图状态（同步 active 类与 aria-pressed）
+    syncViewButtons(state.currentView);
 
     // 设置事件
     setupEvents();
@@ -951,12 +1268,13 @@
       .then(function(r) { if (!r.ok) return {}; return r.json(); })
       .then(function(cfg) {
         state.catConfig = (cfg && cfg.categories) || {};
-        return fetch(DATA_PATH + '?t=' + Date.now());
+        // 首次加载使用全量请求（不带条件头），同时记录 ETag / Last-Modified 供后续轮询协商
+        return fetchData(false);
       })
-      .then(function(r) { if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
+      .then(function(res) { return res.data; })
       .then(function(data) {
         if (!data || !data.posts) throw new Error('数据格式异常');
-        state.allPosts = data.posts || [];
+        state.allPosts = visiblePosts(data.posts || []);
 
         renderHeader(data);
         updateCatTabs();

@@ -31,6 +31,7 @@
 | 📊 三视图模式 | 瀑布流分类视图 / 卡片列表视图 / 日历视图 |
 | 📂 分类筛选 | 通过 `config.json` 灵活控制分类可见性 |
 | 🔍 关键词搜索 | 支持搜索帖子标题、内容和分类，实时防抖 |
+| ⭐ 本地收藏 | 收藏感兴趣的帖子，支持"收藏"视图筛选，数据仅保存在本机 |
 | 🌙 深色模式 | 支持亮色/深色主题切换，自动保存偏好 |
 | ⚡ 骨架屏加载 | 优化加载体验，减少页面闪烁 |
 | 📱 响应式设计 | 完美适配桌面与移动端 |
@@ -59,7 +60,7 @@
 
 ### 前置条件
 
-- Python 3.8+
+- Python 3.10+
 - Git
 - GitHub 账号
 - TRAE 论坛账号
@@ -82,7 +83,8 @@ python scripts/fetch_posts.py
 # macOS / Linux
 FORUM_USERNAME=你的论坛用户名 python scripts/fetch_posts.py
 
-# 4. 本地预览 — 用浏览器打开 index.html 即可
+# 4. 本地预览 — 启动本地服务器后访问 http://localhost:8080
+python -m http.server 8080
 ```
 
 > 📖 完整配置指南请参考 **[SETUP.md](./SETUP.md)**
