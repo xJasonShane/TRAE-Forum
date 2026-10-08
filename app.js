@@ -49,6 +49,7 @@
     catConfig: {},
     activeCategory: 'all',
     activeTags: [],
+    tagBarExpanded: false,    // 标签栏是否展开（默认折叠，仅显示前 10 个）
     searchQuery: '',
     currentSort: 'newest',
     currentView: 'columns',
@@ -332,6 +333,16 @@
     });
     list.innerHTML = h;
 
+    // 深链接/搜索恢复时激活分类可能在可视区外，水平居中到激活标签
+    var act = list.querySelector('.cat-tab.active');
+    if (act) {
+      var al = act.offsetLeft, ar = al + act.offsetWidth;
+      if (al < list.scrollLeft + 4 || ar > list.scrollLeft + list.clientWidth - 4) {
+        list.scrollLeft = al - (list.clientWidth - act.offsetWidth) / 2;
+      }
+    }
+    updateCatNav();
+
     var searchResults = document.getElementById('search-results');
     if (searchResults) {
       if (state.searchQuery) {
@@ -344,6 +355,25 @@
 
     // 标签栏与分类栏同步刷新
     updateTagBar();
+  }
+
+  // ──────────────────────────────────────────
+  // 分类栏左右滚动箭头：仅在对应方向还有内容时显示
+  // ──────────────────────────────────────────
+  function updateCatNav() {
+    var list = document.getElementById('cat-list');
+    var left = document.getElementById('cat-nav-left');
+    var right = document.getElementById('cat-nav-right');
+    if (!list || !left || !right) return;
+    var max = list.scrollWidth - list.clientWidth;
+    left.classList.toggle('show', list.scrollLeft > 2);
+    right.classList.toggle('show', list.scrollLeft < max - 2);
+  }
+
+  function scrollCats(dir) {
+    var list = document.getElementById('cat-list');
+    if (!list) return;
+    list.scrollBy({ left: dir * 240, behavior: 'smooth' });
   }
 
   // ──────────────────────────────────────────
@@ -378,10 +408,21 @@
     }
 
     var h = '<span class="tag-bar-label">🏷 标签</span>';
-    sorted.forEach(function(t) {
+
+    // 默认折叠：仅显示前 N 个标签，已选中的标签始终保留，其余收进"展开全部"
+    var TAG_PREVIEW = 10;
+    var expanded = state.tagBarExpanded;
+    var visible = sorted.filter(function(t, i) {
+      return expanded || i < TAG_PREVIEW || state.activeTags.indexOf(t) !== -1;
+    });
+    visible.forEach(function(t) {
       var active = state.activeTags.indexOf(t) !== -1;
       h += '<button class="tag-chip' + (active ? ' active' : '') + '" data-tag="' + esc(t) + '" aria-pressed="' + active + '" title="按标签筛选（可多选，并集生效）">' + esc(t) + ' <span class="cnt">' + counts[t] + '</span></button>';
     });
+    if (sorted.length > TAG_PREVIEW) {
+      var hidden = sorted.length - visible.length;
+      h += '<button class="tag-toggle" data-tag-toggle="1" aria-expanded="' + expanded + '" title="' + (expanded ? '收起标签列表' : '展开其余 ' + hidden + ' 个标签') + '">' + (expanded ? '收起 ▴' : '展开全部 ▾ ' + hidden) + '</button>';
+    }
     bar.innerHTML = h;
     bar.style.display = '';
   }
@@ -857,10 +898,12 @@
     }
     wrap.innerHTML = cells;
 
-    // 月份标签：单元格步长 12px + 3px 间距 = 15px，绝对定位到对应周列
+    // 月份标签：单元格宽度随容器拉伸（1fr），按渲染后的实际列步长绝对定位
+    var colCount = Math.ceil(idx / 7);
+    var step = (wrap.clientWidth + 3) / colCount; // (W + gap) / N = 列宽 + 间距
     var monthsHtml = '';
     monthLabels.forEach(function(m) {
-      monthsHtml += '<span style="left:' + (m.col * 15) + 'px">' + m.name + '</span>';
+      monthsHtml += '<span style="left:' + Math.round(m.col * step) + 'px">' + m.name + '</span>';
     });
     monthsEl.innerHTML = monthsHtml;
   }
@@ -1124,8 +1167,20 @@
       saveToURL();
     });
 
+    // 分类栏滚动箭头：点击平滑滚动，滚动时同步箭头显隐
+    document.getElementById('cat-nav-left').addEventListener('click', function() { scrollCats(-1); });
+    document.getElementById('cat-nav-right').addEventListener('click', function() { scrollCats(1); });
+    document.getElementById('cat-list').addEventListener('scroll', updateCatNav, { passive: true });
+
     // 标签筛选（多选，并集语义，再次点击取消）
     document.getElementById('tag-list').addEventListener('click', function(e) {
+      // 展开/收起按钮：仅重绘标签栏，不影响帖子筛选
+      var toggle = e.target.closest('.tag-toggle');
+      if (toggle) {
+        state.tagBarExpanded = !state.tagBarExpanded;
+        updateTagBar();
+        return;
+      }
       var btn = e.target.closest('.tag-chip');
       if (!btn) return;
       var tag = btn.dataset.tag;
@@ -1216,9 +1271,12 @@
     // 视口尺寸变化：列数可能改变，行高缓存失效，重开窗口并保持锚点位置
     var vResizeTimer = null;
     window.addEventListener('resize', function() {
-      if (!virtual.active) return;
       clearTimeout(vResizeTimer);
       vResizeTimer = setTimeout(function() {
+        // 热力图单元格为 1fr 拉伸布局，宽度变化后需重算月份标签位置
+        if (state.showStats) renderHeatmap();
+        // 分类栏宽度变化后同步滚动箭头显隐
+        updateCatNav();
         if (!virtual.active || !virtual.wrap) return;
         // 记录视口顶部所在行的首项作为锚点
         var wrapTop = virtual.wrap.getBoundingClientRect().top + window.scrollY;
@@ -1414,6 +1472,8 @@
         renderPosts();
 
         document.getElementById('toolbar').style.display = '';
+        // toolbar 显示前测量宽度均为 0，需显示后再同步一次滚动箭头显隐
+        updateCatNav();
 
         startAutoRefresh();
         if (!state.visibilityHooked) {

@@ -236,6 +236,21 @@ mark {
 }
 .search-clear:hover { background: var(--text-tertiary); color: #fff; }
 .search-clear.show { display: flex; }
+.cat-tabs-nav {
+  display: flex; align-items: center; gap: 4px;
+  flex: 1; min-width: 0; /* 允许在 flex 布局中收缩，保证内部横向滚动生效 */
+}
+.cat-nav-btn {
+  flex-shrink: 0; width: 24px; height: 32px;
+  display: none; align-items: center; justify-content: center;
+  border: 1.5px solid var(--border); border-radius: 8px;
+  background: var(--bg-white); color: var(--text-secondary);
+  cursor: pointer; padding: 0;
+  transition: all 0.15s var(--ease);
+}
+.cat-nav-btn svg { width: 14px; height: 14px; }
+.cat-nav-btn.show { display: inline-flex; }
+.cat-nav-btn:hover { color: var(--accent); border-color: var(--accent-mid); background: var(--accent-soft); }
 .cat-tabs {
   display: flex; gap: 6px; overflow-x: auto; flex: 1;
   -webkit-overflow-scrolling: touch; scrollbar-width: none;
@@ -318,6 +333,15 @@ mark {
   box-shadow: 0 2px 8px rgba(79,110,247,0.25);
 }
 .tag-chip .cnt { font-size: 0.65rem; opacity: 0.6; font-weight: 600; }
+.tag-toggle {
+  display: inline-flex; align-items: center;
+  padding: 3px 10px; border-radius: 999px;
+  border: 1.5px dashed var(--border);
+  background: transparent; color: var(--text-tertiary);
+  font-size: 0.75rem; cursor: pointer; user-select: none;
+  transition: all 0.15s var(--ease);
+}
+.tag-toggle:hover { color: var(--accent); border-color: var(--accent-mid); background: var(--accent-soft); }
 
 /* ── MAIN ── */
 main { padding: 24px 0 48px; }
@@ -610,7 +634,8 @@ footer a:hover { text-decoration: underline; }
 .hm-weekdays span { height: 12px; line-height: 12px; font-size: 0.6rem; color: var(--text-tertiary); }
 .heatmap {
   display: grid; grid-auto-flow: column;
-  grid-template-rows: repeat(7, 12px); grid-auto-columns: 12px; gap: 3px;
+  grid-template-rows: repeat(7, 12px); grid-auto-columns: 1fr; gap: 3px;
+  flex: 1; min-width: 795px; /* 53 周 × 15px 下限：窄屏不压缩过小，宽屏单元格横向拉伸铺满 */
 }
 .hm-cell { border-radius: 2px; background: var(--border-light); }
 .hm-l1 { background: color-mix(in srgb, var(--accent) 25%, transparent); }
