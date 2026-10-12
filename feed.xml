@@ -5,7 +5,25 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Mon, 12 Oct 2026 05:17:57 +0000</lastBuildDate>
+<lastBuildDate>Mon, 12 Oct 2026 14:57:18 +0000</lastBuildDate>
+<item>
+<title>千问团队发布QwenGyre，一个面向超长程智能体任务的在线强化学习框架</title>
+<link>https://forum.trae.cn/t/topic/183850</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/183850</guid>
+<pubDate>Mon, 12 Oct 2026 11:13:02 +0000</pubDate>
+<category>AI充电站</category>
+<description>官方原文： 
+
+我们正式发布 QwenGyre，一个面向超长程智能体任务的在线强化学习框架。当智能体承担复杂工作，一次执行往往持续数小时，模型与环境之间有数百轮相互依赖的交互，累计处理百万级 token。QwenGyre 通过弹性调度与轨迹…</description>
+</item>
+<item>
+<title>AI让我越来越懒，自己review只剩38%</title>
+<link>https://forum.trae.cn/t/topic/183777</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/183777</guid>
+<pubDate>Mon, 12 Oct 2026 06:29:17 +0000</pubDate>
+<category>互动交流</category>
+<description></description>
+</item>
 <item>
 <title>Qwen4将登神还是坠入地狱，也就在这几天揭晓了</title>
 <link>https://forum.trae.cn/t/topic/183715</link>
@@ -417,22 +435,6 @@ mac端：deepseek-harness-0.1.7-rc.1.20260924.1-mac-arm64.dmg
 <guid isPermaLink="true">https://forum.trae.cn/t/topic/181687</guid>
 <pubDate>Fri, 18 Sep 2026 04:16:45 +0000</pubDate>
 <category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>千问新一代原生全模态模型 Qwen3.8-Omni-Flash 正式上线</title>
-<link>https://forum.trae.cn/t/topic/181681</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/181681</guid>
-<pubDate>Fri, 18 Sep 2026 03:51:48 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>TraeCode SOLO模式上下文消耗显示和积分消耗显示互斥，导致无法查看</title>
-<link>https://forum.trae.cn/t/topic/181652</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/181652</guid>
-<pubDate>Fri, 18 Sep 2026 01:39:29 +0000</pubDate>
-<category>帮助与支持</category>
 <description></description>
 </item>
 </channel>
