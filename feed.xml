@@ -5,7 +5,26 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Fri, 16 Oct 2026 00:09:32 +0000</lastBuildDate>
+<lastBuildDate>Fri, 16 Oct 2026 06:53:55 +0000</lastBuildDate>
+<item>
+<title>想要解决问题就要先说清楚问题</title>
+<link>https://forum.trae.cn/t/topic/325558</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/325558</guid>
+<pubDate>Fri, 16 Oct 2026 05:50:49 +0000</pubDate>
+<category>互动交流</category>
+<description>随着社区人越来越多，问题反馈也越来越多，这是一个正常的现象，但为了节约自己和解决问题人员的精力和时间，有必要聊一聊描述问题的技术，本来这不应该成为一个话题，但是现在让人看不懂或者需要二次补充细节的问题太多了(在这里也透个底，面对低级问题和明…</description>
+</item>
+<item>
+<title>MiMo V2.6 Pro模型荣登Arena开源模型Agent能力榜单第一名</title>
+<link>https://forum.trae.cn/t/topic/325525</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/325525</guid>
+<pubDate>Fri, 16 Oct 2026 02:54:18 +0000</pubDate>
+<category>AI充电站</category>
+<description>原文引用 
+
+激动人心的更新：在开源模型的 Agent Arena 中出现了一位新的领导者。由@XiaomiMiMo的 MiMo V2.6 Pro 以 +3.8% 的净提升荣登 #1 宝座！ 
+本周早些时候，我们在 Agent A…</description>
+</item>
 <item>
 <title>TRAE 已支持自定义启动面板功能</title>
 <link>https://forum.trae.cn/t/topic/325476</link>
@@ -419,22 +438,6 @@ mac端：deepseek-harness-0.1.7-rc.1.20260924.1-mac-arm64.dmg
 <link>https://forum.trae.cn/t/topic/181859</link>
 <guid isPermaLink="true">https://forum.trae.cn/t/topic/181859</guid>
 <pubDate>Sun, 20 Sep 2026 04:54:29 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>跃阶星辰 Step5 预览版全量发布，一跃成为国内性价比最高的模型</title>
-<link>https://forum.trae.cn/t/topic/181854</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/181854</guid>
-<pubDate>Sun, 20 Sep 2026 03:47:32 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>仅7B参数的Qwen-Image-2.1比肩GPT-Image-2.5，将于今晚9点开源</title>
-<link>https://forum.trae.cn/t/topic/181845</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/181845</guid>
-<pubDate>Sun, 20 Sep 2026 02:54:21 +0000</pubDate>
 <category>AI充电站</category>
 <description></description>
 </item>
