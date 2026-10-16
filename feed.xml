@@ -5,7 +5,35 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Fri, 16 Oct 2026 06:53:55 +0000</lastBuildDate>
+<lastBuildDate>Fri, 16 Oct 2026 13:06:42 +0000</lastBuildDate>
+<item>
+<title>时隔两个月，我的模型管理软件怎么样了？</title>
+<link>https://forum.trae.cn/t/topic/325617</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/325617</guid>
+<pubDate>Fri, 16 Oct 2026 10:59:09 +0000</pubDate>
+<category>案例与作品</category>
+<description>本来这个软件是我个人的需求，借此我还发了一个半教程帖： 教你300积分从空文件夹到一个本地SD模型管理 MVP 项目软件 
+经过修修补补也算是一个成品了，不过我还是把它定义为Beta测试版，毕竟还有很多小功能没有实现，但它也算是一个完整的可…</description>
+</item>
+<item>
+<title>月总恩情还不完，在月总的跟踪和督促下，软件更新日志完善了</title>
+<link>https://forum.trae.cn/t/topic/325613</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/325613</guid>
+<pubDate>Fri, 16 Oct 2026 10:49:04 +0000</pubDate>
+<category>互动交流</category>
+<description></description>
+</item>
+<item>
+<title>腾讯混元团队发布Hy Memory 2.0，模型、框架、应用三层全开源，Memory领域新增一名大将</title>
+<link>https://forum.trae.cn/t/topic/325604</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/325604</guid>
+<pubDate>Fri, 16 Oct 2026 09:53:59 +0000</pubDate>
+<category>AI充电站</category>
+<description>开源地址 
+
+Hy Memory SDK&amp;MemHub：https://github.com/Tencent-Hunyuan/Hy-Memory
+Hy-Memory-30B-A3B 模型权重下载：https://huggingface.co…</description>
+</item>
 <item>
 <title>想要解决问题就要先说清楚问题</title>
 <link>https://forum.trae.cn/t/topic/325558</link>
@@ -414,30 +442,6 @@ mac端：deepseek-harness-0.1.7-rc.1.20260924.1-mac-arm64.dmg
 <link>https://forum.trae.cn/t/topic/181923</link>
 <guid isPermaLink="true">https://forum.trae.cn/t/topic/181923</guid>
 <pubDate>Sun, 20 Sep 2026 13:12:00 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>GLM-5.3-FlashX已上线内置模型</title>
-<link>https://forum.trae.cn/t/topic/181894</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/181894</guid>
-<pubDate>Sun, 20 Sep 2026 08:29:36 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>Kimi-K3.1即将上线，官方留下彩蛋</title>
-<link>https://forum.trae.cn/t/topic/181861</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/181861</guid>
-<pubDate>Sun, 20 Sep 2026 04:58:40 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>MiniMax M3.1即将上线</title>
-<link>https://forum.trae.cn/t/topic/181859</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/181859</guid>
-<pubDate>Sun, 20 Sep 2026 04:54:29 +0000</pubDate>
 <category>AI充电站</category>
 <description></description>
 </item>
