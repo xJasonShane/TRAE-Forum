@@ -5,7 +5,16 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Sat, 17 Oct 2026 00:13:22 +0000</lastBuildDate>
+<lastBuildDate>Sat, 17 Oct 2026 06:46:19 +0000</lastBuildDate>
+<item>
+<title>deepseek新迭代模型已热更新，deepseek-v4.1-flash-1017版本</title>
+<link>https://forum.trae.cn/t/topic/325656</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/325656</guid>
+<pubDate>Sat, 17 Oct 2026 04:14:46 +0000</pubDate>
+<category>互动交流</category>
+<description>根据DeepSeek官方交流群网友和国际网站抓取确定，今日deepseek热更新flash模型，内部版本代号deepseek-v4.1-flash-1017 
+综合测评较原版有一定提升，token消耗明显下降，长思考也降低很多，速度基本维持…</description>
+</item>
 <item>
 <title>时隔两个月，我的模型管理软件怎么样了？</title>
 <link>https://forum.trae.cn/t/topic/325617</link>
@@ -434,14 +443,6 @@ mac端：deepseek-harness-0.1.7-rc.1.20260924.1-mac-arm64.dmg
 <link>https://forum.trae.cn/t/topic/182049</link>
 <guid isPermaLink="true">https://forum.trae.cn/t/topic/182049</guid>
 <pubDate>Mon, 21 Sep 2026 10:52:33 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>Qwen-Image-2.1正式开源，仅7B参数跻身国际前列</title>
-<link>https://forum.trae.cn/t/topic/181923</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/181923</guid>
-<pubDate>Sun, 20 Sep 2026 13:12:00 +0000</pubDate>
 <category>AI充电站</category>
 <description></description>
 </item>
