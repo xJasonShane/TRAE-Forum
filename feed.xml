@@ -5,7 +5,31 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Mon, 19 Oct 2026 07:31:51 +0000</lastBuildDate>
+<lastBuildDate>Mon, 19 Oct 2026 15:24:16 +0000</lastBuildDate>
+<item>
+<title>GLM-Omni模型灰度，疑似5.5版本测试</title>
+<link>https://forum.trae.cn/t/topic/325942</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/325942</guid>
+<pubDate>Mon, 19 Oct 2026 15:20:43 +0000</pubDate>
+<category>AI充电站</category>
+<description></description>
+</item>
+<item>
+<title>MiniMax-M3.1-Flash正式版发布，五档思考强度</title>
+<link>https://forum.trae.cn/t/topic/325910</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/325910</guid>
+<pubDate>Mon, 19 Oct 2026 11:08:02 +0000</pubDate>
+<category>AI充电站</category>
+<description></description>
+</item>
+<item>
+<title>AA智能榜更新，DeepSeek-V4.1-Flash-1017获45分与GLM-5.3持平</title>
+<link>https://forum.trae.cn/t/topic/325882</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/325882</guid>
+<pubDate>Mon, 19 Oct 2026 08:50:41 +0000</pubDate>
+<category>AI充电站</category>
+<description></description>
+</item>
 <item>
 <title>TRAE：我们移除了提示词优化按钮</title>
 <link>https://forum.trae.cn/t/topic/325819</link>
@@ -421,30 +445,6 @@ mac端：deepseek-harness-0.1.7-rc.1.20260924.1-mac-arm64.dmg
 <pubDate>Tue, 22 Sep 2026 05:04:38 +0000</pubDate>
 <category>互动交流</category>
 <description>隐藏AI生成标识</description>
-</item>
-<item>
-<title>Qwen4系列正式曝光，Max模型剑指GPT-6等国际前沿，50万卡集群算力支持</title>
-<link>https://forum.trae.cn/t/topic/182130</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182130</guid>
-<pubDate>Tue, 22 Sep 2026 04:42:01 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>Hy Image3.5 preview 发布，文本渲染与布局能力大幅度提升</title>
-<link>https://forum.trae.cn/t/topic/182115</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182115</guid>
-<pubDate>Tue, 22 Sep 2026 03:14:47 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>Mimo-2.6-Pro&amp;Flash正式发布，低成本高强度，综合评分位列国产第一</title>
-<link>https://forum.trae.cn/t/topic/182087</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182087</guid>
-<pubDate>Tue, 22 Sep 2026 00:55:48 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
 </item>
 </channel>
 </rss>
