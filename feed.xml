@@ -5,7 +5,17 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Tue, 20 Oct 2026 13:27:03 +0000</lastBuildDate>
+<lastBuildDate>Tue, 20 Oct 2026 18:23:59 +0000</lastBuildDate>
+<item>
+<title>Unsloth AI团队量化DeepSeek V4.1-Flash-1017发布，实现1-bit 保留约 88.2% 准确率</title>
+<link>https://forum.trae.cn/t/topic/326117</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/326117</guid>
+<pubDate>Tue, 20 Oct 2026 14:47:26 +0000</pubDate>
+<category>AI充电站</category>
+<description>DeepSeek V4.1-Flash-1017 现可本地运行！ 
+我们实现了 1-bit 保留约 88.2% 准确率，同时将大小从 508GB 缩小至 250GB（−52%）。 
+在 128GB+ RAM 设备上运行。V4.1 Flas…</description>
+</item>
 <item>
 <title>DeepSeek开源推理框架：走向真正普惠的未来</title>
 <link>https://forum.trae.cn/t/topic/326086</link>
@@ -434,18 +444,6 @@ mac端：deepseek-harness-0.1.7-rc.1.20260924.1-mac-arm64.dmg
 <pubDate>Thu, 24 Sep 2026 00:14:24 +0000</pubDate>
 <category>AI充电站</category>
 <description></description>
-</item>
-<item>
-<title>阶跃星辰Step-5-Preview实际体验</title>
-<link>https://forum.trae.cn/t/topic/182307</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182307</guid>
-<pubDate>Wed, 23 Sep 2026 07:52:36 +0000</pubDate>
-<category>互动交流</category>
-<description>写在前面： 
-
-本文章内测试使用的是阶跃星辰官方Plan自定义接入，测试套餐为Plus Plan(¥99)未使用内置积分形式测试
-测试和体感均由限制性，不能保证文内所述为大众一致感受
-具体性价比我自己没测试，因为阶跃星辰官方Plan使用的积…</description>
 </item>
 </channel>
 </rss>
