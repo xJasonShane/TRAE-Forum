@@ -5,7 +5,23 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Tue, 20 Oct 2026 00:58:57 +0000</lastBuildDate>
+<lastBuildDate>Tue, 20 Oct 2026 07:20:34 +0000</lastBuildDate>
+<item>
+<title>【模型吐槽帖】我很少直面说一个模型弱鸡，但MiniMax是其中之一</title>
+<link>https://forum.trae.cn/t/topic/326006</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/326006</guid>
+<pubDate>Tue, 20 Oct 2026 03:39:52 +0000</pubDate>
+<category>互动交流</category>
+<description>M3危机事件只要是关注AI圈比较频繁的都应该了解，我曾认为国内很少能够突破M3危机事件，但如果它是M3.1就不奇怪了，这个模型强度早在匿名模型——太空兔出来时，我便在MiniMax官方交流群说了，如果是M3.1就不要拿出来丢人了，但是官方认…</description>
+</item>
+<item>
+<title>在AA智能榜上，国产模型扎堆T1队列却无人能越过天堑</title>
+<link>https://forum.trae.cn/t/topic/325995</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/325995</guid>
+<pubDate>Tue, 20 Oct 2026 03:03:16 +0000</pubDate>
+<category>互动交流</category>
+<description></description>
+</item>
 <item>
 <title>GLM-Omni模型灰度，疑似5.5版本测试</title>
 <link>https://forum.trae.cn/t/topic/325942</link>
@@ -429,22 +445,6 @@ mac端：deepseek-harness-0.1.7-rc.1.20260924.1-mac-arm64.dmg
 <pubDate>Tue, 22 Sep 2026 08:24:58 +0000</pubDate>
 <category>互动交流</category>
 <description></description>
-</item>
-<item>
-<title>包子姐分析的Mimo-v2.6技术报告</title>
-<link>https://forum.trae.cn/t/topic/182154</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182154</guid>
-<pubDate>Tue, 22 Sep 2026 06:35:44 +0000</pubDate>
-<category>互动交流</category>
-<description>MiMo-V2.6 技术报告核心总结</description>
-</item>
-<item>
-<title>【版本速递】TraeCode v3.3.104 新增隐藏AI生成标识</title>
-<link>https://forum.trae.cn/t/topic/182133</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182133</guid>
-<pubDate>Tue, 22 Sep 2026 05:04:38 +0000</pubDate>
-<category>互动交流</category>
-<description>隐藏AI生成标识</description>
 </item>
 </channel>
 </rss>
