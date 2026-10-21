@@ -5,7 +5,31 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Tue, 20 Oct 2026 23:04:18 +0000</lastBuildDate>
+<lastBuildDate>Wed, 21 Oct 2026 04:04:16 +0000</lastBuildDate>
+<item>
+<title>能感受到Agent的结构图和动态UI能力在提升，但还是差点意思</title>
+<link>https://forum.trae.cn/t/topic/326176</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/326176</guid>
+<pubDate>Wed, 21 Oct 2026 02:56:29 +0000</pubDate>
+<category>互动交流</category>
+<description></description>
+</item>
+<item>
+<title>OpenRouter今天截止到现在的调用榜，还能看到历史的眼泪</title>
+<link>https://forum.trae.cn/t/topic/326173</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/326173</guid>
+<pubDate>Wed, 21 Oct 2026 02:46:55 +0000</pubDate>
+<category>互动交流</category>
+<description></description>
+</item>
+<item>
+<title>GLM-5.3-Flash积分倍率上调至0.08x</title>
+<link>https://forum.trae.cn/t/topic/326161</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/326161</guid>
+<pubDate>Wed, 21 Oct 2026 02:15:42 +0000</pubDate>
+<category>互动交流</category>
+<description></description>
+</item>
 <item>
 <title>Unsloth AI团队量化DeepSeek V4.1-Flash-1017发布，实现1-bit 保留约 88.2% 准确率</title>
 <link>https://forum.trae.cn/t/topic/326117</link>
@@ -414,35 +438,6 @@ mac端：deepseek-harness-0.1.7-rc.1.20260924.1-mac-arm64.dmg
 <guid isPermaLink="true">https://forum.trae.cn/t/topic/182437</guid>
 <pubDate>Thu, 24 Sep 2026 08:15:30 +0000</pubDate>
 <category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>小米MiMo官方发布下一代大模型架构预览：HySparse2</title>
-<link>https://forum.trae.cn/t/topic/182428</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182428</guid>
-<pubDate>Thu, 24 Sep 2026 07:32:06 +0000</pubDate>
-<category>AI充电站</category>
-<description>HySparse2 面向长程多轮 AGENT，更少的 Prefill 计算，更小的 KV Cache，更精准的长上下文检索。 
-原文链接：HySparse2：Xiaomi MiMo-V3 新架构预览 
-看架构还是能够看出Transforme…</description>
-</item>
-<item>
-<title>【大模型全书】模型量化篇</title>
-<link>https://forum.trae.cn/t/topic/182425</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182425</guid>
-<pubDate>Thu, 24 Sep 2026 07:20:53 +0000</pubDate>
-<category>AI充电站</category>
-<description>注：转自魔搭紫皮书 
-
-对于已经下载或微调完成的模型，常见做法是训练后量化（PTQ），也就是在模型训练完成后，再把权重等数值转换为更低精度的表示。有些方法需要准备一小批有代表性的数据，用来校准量化过程，尽量减小误差。 
-另一类是量化感知训…</description>
-</item>
-<item>
-<title>罗福莉深夜发文，曝光 MiMo-V3 消息</title>
-<link>https://forum.trae.cn/t/topic/182365</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182365</guid>
-<pubDate>Thu, 24 Sep 2026 00:14:24 +0000</pubDate>
-<category>AI充电站</category>
 <description></description>
 </item>
 </channel>
