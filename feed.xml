@@ -5,7 +5,15 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Wed, 21 Oct 2026 04:04:16 +0000</lastBuildDate>
+<lastBuildDate>Wed, 21 Oct 2026 11:28:51 +0000</lastBuildDate>
+<item>
+<title>SGLang中出现两个K3.1模型部署适配提交，其中一个已经在 Deepinfra 上运行K3.1部署</title>
+<link>https://forum.trae.cn/t/topic/326237</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/326237</guid>
+<pubDate>Wed, 21 Oct 2026 08:20:50 +0000</pubDate>
+<category>互动交流</category>
+<description></description>
+</item>
 <item>
 <title>能感受到Agent的结构图和动态UI能力在提升，但还是差点意思</title>
 <link>https://forum.trae.cn/t/topic/326176</link>
@@ -431,14 +439,6 @@ C图：
 <description>windows端：deepseek-harness-0.1.7-rc.1.20260924.1-win-x64.exe 
 mac端：deepseek-harness-0.1.7-rc.1.20260924.1-mac-arm64.dmg 
  …</description>
-</item>
-<item>
-<title>AA智能榜更新，斩杀线来到40分，DeepSeek仍没有站起来</title>
-<link>https://forum.trae.cn/t/topic/182437</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182437</guid>
-<pubDate>Thu, 24 Sep 2026 08:15:30 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
 </item>
 </channel>
 </rss>
