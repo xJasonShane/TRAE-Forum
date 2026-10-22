@@ -5,7 +5,33 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Thu, 22 Oct 2026 00:31:10 +0000</lastBuildDate>
+<lastBuildDate>Thu, 22 Oct 2026 07:20:59 +0000</lastBuildDate>
+<item>
+<title>【1024Builder作品秀】一个简易的1024BUG合并游戏</title>
+<link>https://forum.trae.cn/t/topic/326387</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/326387</guid>
+<pubDate>Thu, 22 Oct 2026 05:53:28 +0000</pubDate>
+<category>案例与作品</category>
+<description>作品介绍
+2048合并小游戏大家应该都玩过，基于这个游戏机制，我用TRAE制作了一个简易的1024合并小游戏，不同的是游戏主题为1024程序员节，里面包含git merge等指令，随着分数增多不断变更merge进度。 
+Demo链接： 10…</description>
+</item>
+<item>
+<title>【Kimi-K3.1】与爆料者预言一致Arena已出现Kibitz代号模型</title>
+<link>https://forum.trae.cn/t/topic/326383</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/326383</guid>
+<pubDate>Thu, 22 Oct 2026 05:21:43 +0000</pubDate>
+<category>AI充电站</category>
+<description>基于昨日爆料者 **SGLang中出现两个K3.1模型部署适配提交，其中一个已经在 Deepinfra 上运行K3.1部署**中同步宣称关注Arena竞技场可能出现的新代号模型，今日已经正式上线Kibitz代号模型，分词器与Kimi-K3系…</description>
+</item>
+<item>
+<title>这个互联网世界大厦缝缝补补摇摇欲坠</title>
+<link>https://forum.trae.cn/t/topic/326348</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/326348</guid>
+<pubDate>Thu, 22 Oct 2026 02:54:11 +0000</pubDate>
+<category>互动交流</category>
+<description></description>
+</item>
 <item>
 <title>SGLang中出现两个K3.1模型部署适配提交，其中一个已经在 Deepinfra 上运行K3.1部署</title>
 <link>https://forum.trae.cn/t/topic/326237</link>
@@ -402,43 +428,6 @@ Hy-Memory-30B-A3B 模型权重下载：https://huggingface.co…</description>
 <description>美团LongCat发布LongCat-2.5-Preview模型。 
 据官方公布，该模型总参数量1.6T，激活参数约48B，上下文窗口达100万token，原生支持多模态，面向终端、浏览器、GUI、电子表格和设计工具等长程任务场景。 
 能力…</description>
-</item>
-<item>
-<title>Kimi新模型圆周率彩蛋解读错误？Kimi-K4页面在OpenCode出现！</title>
-<link>https://forum.trae.cn/t/topic/182504</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182504</guid>
-<pubDate>Fri, 25 Sep 2026 06:42:37 +0000</pubDate>
-<category>互动交流</category>
-<description>之前kimi官方发布的圆周率彩蛋，大家一致猜的圆周率缺少前面的3.1是官方在预告K3.1即将上线，但今天OpenCode的模型清单中，Kimi-K4页面出现了，并且我自己也测试了其他版本号，K3.1的显示错误，结合圆周率彩蛋，现在一致认为官…</description>
-</item>
-<item>
-<title>你认得出AI图片吗？和大家玩个游戏</title>
-<link>https://forum.trae.cn/t/topic/182453</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182453</guid>
-<pubDate>Thu, 24 Sep 2026 12:42:49 +0000</pubDate>
-<category>互动交流</category>
-<description>下面那张是AI图片生成？(不要在意图片清晰度，无意间被压缩了) 
-四张图片哪张是AI，哪张是真图，亦或者全是AI或全是真图？ 
-看看你能辨别出来吗？ 
-选择你认为是AI图片的选项(多选)
-投票
-A图： 
-  
-B图： 
-  
-C图： 
-  
-…</description>
-</item>
-<item>
-<title>DeepSeek Harness官方桌面端已经发布</title>
-<link>https://forum.trae.cn/t/topic/182450</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182450</guid>
-<pubDate>Thu, 24 Sep 2026 12:06:42 +0000</pubDate>
-<category>互动交流</category>
-<description>windows端：deepseek-harness-0.1.7-rc.1.20260924.1-win-x64.exe 
-mac端：deepseek-harness-0.1.7-rc.1.20260924.1-mac-arm64.dmg 
- …</description>
 </item>
 </channel>
 </rss>
