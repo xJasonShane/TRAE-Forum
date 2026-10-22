@@ -5,7 +5,31 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Thu, 22 Oct 2026 07:20:59 +0000</lastBuildDate>
+<lastBuildDate>Thu, 22 Oct 2026 13:38:34 +0000</lastBuildDate>
+<item>
+<title>【Qwen4】Anena竞技场代号Kalmia模型确定为Qwen系列新模型</title>
+<link>https://forum.trae.cn/t/topic/326444</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/326444</guid>
+<pubDate>Thu, 22 Oct 2026 13:25:43 +0000</pubDate>
+<category>互动交流</category>
+<description>这个1024程序员节很热闹，估计Qwen4和Kimi-K3.1撞车发布</description>
+</item>
+<item>
+<title>我们也来一场大模型盲测吧~</title>
+<link>https://forum.trae.cn/t/topic/326425</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/326425</guid>
+<pubDate>Thu, 22 Oct 2026 09:42:59 +0000</pubDate>
+<category>互动交流</category>
+<description>以下两个3D模型是由两个盲测模型同一提示词制作出来的，大家觉得哪个好一点呢？ 
+
+提示词 
+设计一个中国古风建筑的3D模型，要求可以3D旋转各角度查看，并且支持春夏秋冬场景变换 
+
+投票
+A模型： 
+  
+源文件：A.zip (212.5 …</description>
+</item>
 <item>
 <title>【1024Builder作品秀】一个简易的1024BUG合并游戏</title>
 <link>https://forum.trae.cn/t/topic/326387</link>
@@ -410,24 +434,6 @@ Hy-Memory-30B-A3B 模型权重下载：https://huggingface.co…</description>
 <pubDate>Sat, 26 Sep 2026 05:38:12 +0000</pubDate>
 <category>AI充电站</category>
 <description>OpenAI公布agent活动审查最新进展：研究环境中的agent在使用第三方服务时传输了训练和评估数据，其中53例涉及用户上传的图片被发布到图片托管网站，链接未公开列出。OpenAI称，涉事图片均来自允许数据用于改进模型的账号，且已与账号…</description>
-</item>
-<item>
-<title>Pixel Canary 上线 Cline 与 Vercel AI Gateway</title>
-<link>https://forum.trae.cn/t/topic/182533</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182533</guid>
-<pubDate>Sat, 26 Sep 2026 05:37:25 +0000</pubDate>
-<category>AI充电站</category>
-<description>模型 Pixel Canary 以 stealth 方式发布，现已在 Cline 和 Vercel AI Gateway 两个平台开放，模型 ID 为 𝚜𝚝𝚎𝚊𝚕𝚝𝚑/𝚙𝚒𝚡𝚎𝚕-𝚌𝚊𝚗𝚊𝚛𝚢。该模型面向 Agentic 编程和移动应用开发…</description>
-</item>
-<item>
-<title>美团LongCat发布LongCat-2.5-Preview</title>
-<link>https://forum.trae.cn/t/topic/182532</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182532</guid>
-<pubDate>Sat, 26 Sep 2026 05:36:54 +0000</pubDate>
-<category>AI充电站</category>
-<description>美团LongCat发布LongCat-2.5-Preview模型。 
-据官方公布，该模型总参数量1.6T，激活参数约48B，上下文窗口达100万token，原生支持多模态，面向终端、浏览器、GUI、电子表格和设计工具等长程任务场景。 
-能力…</description>
 </item>
 </channel>
 </rss>
