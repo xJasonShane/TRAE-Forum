@@ -5,7 +5,34 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Thu, 22 Oct 2026 23:06:48 +0000</lastBuildDate>
+<lastBuildDate>Fri, 23 Oct 2026 04:08:26 +0000</lastBuildDate>
+<item>
+<title>米哈游崩坏 AI 团队联合清华大学等开源 GameScaling 游戏操作模型</title>
+<link>https://forum.trae.cn/t/topic/326509</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/326509</guid>
+<pubDate>Fri, 23 Oct 2026 04:06:33 +0000</pubDate>
+<category>AI充电站</category>
+<description>米哈游崩坏 AI 团队联合清华大学等发布并开源 GameScaling 游戏操作模型，基于 Qwen3.5 视觉语言模型进行持续预训练，参数量覆盖 0.8B 至 27B。 
+模型接收当前游戏画面及近期画面、动作历史，每次输出未来 200 毫…</description>
+</item>
+<item>
+<title>上海人工智能实验室发布 Sage-A1.5</title>
+<link>https://forum.trae.cn/t/topic/326508</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/326508</guid>
+<pubDate>Fri, 23 Oct 2026 04:05:26 +0000</pubDate>
+<category>AI充电站</category>
+<description>上海人工智能实验室发布书生-A1.5（Sage-A1.5）并开放模型权重，重点提升智能体编排、自主验证与开放式科学探索能力。 
+该模型采用MoE架构，总参数为35B，激活参数为3B，原生支持256K上下文，通过YaRN可扩展至512K。 
+模…</description>
+</item>
+<item>
+<title>Kimi官方确定K3.1模型，预计明日程序员节上线</title>
+<link>https://forum.trae.cn/t/topic/326478</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/326478</guid>
+<pubDate>Fri, 23 Oct 2026 02:24:39 +0000</pubDate>
+<category>互动交流</category>
+<description>官方视频截图</description>
+</item>
 <item>
 <title>【Qwen4】Anena竞技场代号Kalmia模型确定为Qwen系列新模型</title>
 <link>https://forum.trae.cn/t/topic/326444</link>
@@ -409,31 +436,6 @@ Hy-Memory-30B-A3B 模型权重下载：https://huggingface.co…</description>
 <category>互动交流</category>
 <description>各位有项目重构经验的伙伴都是怎么做的，我现在有一个需求，之前的一个图片博客项目已经十分完善了，但是受到前期经验不足和大模型能力，底层的框架并不优秀，埋藏了很多bug和雷，修修补补其实并不划算 
 所以现在打算彻底重构，在保持整体页面UI不变和…</description>
-</item>
-<item>
-<title>你们在休假，而我在烧Token</title>
-<link>https://forum.trae.cn/t/topic/182558</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182558</guid>
-<pubDate>Sat, 26 Sep 2026 12:53:21 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>DeepSeek Harness团队承诺减少插件API破坏性更新</title>
-<link>https://forum.trae.cn/t/topic/182535</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182535</guid>
-<pubDate>Sat, 26 Sep 2026 05:38:32 +0000</pubDate>
-<category>AI充电站</category>
-<description>DeepSeek Harness团队负责人在 X 平台发文，援引 DeepSeek 官方 API 统计数据称，约有 60% 的 DeepSeek Harness 用户使用了至少一个第三方插件。 
-他表示，第三方插件是 DeepSeek Ha…</description>
-</item>
-<item>
-<title>OpenAI披露：53例用户图片被 AI Agent 意外传至图床</title>
-<link>https://forum.trae.cn/t/topic/182534</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182534</guid>
-<pubDate>Sat, 26 Sep 2026 05:38:12 +0000</pubDate>
-<category>AI充电站</category>
-<description>OpenAI公布agent活动审查最新进展：研究环境中的agent在使用第三方服务时传输了训练和评估数据，其中53例涉及用户上传的图片被发布到图片托管网站，链接未公开列出。OpenAI称，涉事图片均来自允许数据用于改进模型的账号，且已与账号…</description>
 </item>
 </channel>
 </rss>
