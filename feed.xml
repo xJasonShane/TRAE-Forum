@@ -5,7 +5,19 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Fri, 23 Oct 2026 04:08:26 +0000</lastBuildDate>
+<lastBuildDate>Fri, 23 Oct 2026 11:18:35 +0000</lastBuildDate>
+<item>
+<title>【1024Builder作品秀】合成大西瓜-汉字版丨简易web小游戏</title>
+<link>https://forum.trae.cn/t/topic/326523</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/326523</guid>
+<pubDate>Fri, 23 Oct 2026 05:42:52 +0000</pubDate>
+<category>案例与作品</category>
+<description>作品介绍
+继上一个1024BUG合并游戏之后，我又来复刻经典游戏合成大西瓜，以该游戏核心玩法为基础，修改成为合成汉字版本，并且添加了五行相克和隐藏龙脉汉字玩法。 
+体验地址： 合字成境 · 汉字合成大西瓜 - TRAE 
+  
+TRAE制作…</description>
+</item>
 <item>
 <title>米哈游崩坏 AI 团队联合清华大学等开源 GameScaling 游戏操作模型</title>
 <link>https://forum.trae.cn/t/topic/326509</link>
@@ -427,15 +439,6 @@ Hy-Memory-30B-A3B 模型权重下载：https://huggingface.co…</description>
 <category>互动交流</category>
 <description>2025年我愿称之为AI流量的一年，在AI发展并不算十分全面的一年，尝试探索和付出行动的人吃到了第一波螃蟹 
 而2026年我愿称之为AIGC生态完善的一年，在去年需要更多精力投入和技术的领域，在今年开始不断完善平台、工具、模型和工作流，上手…</description>
-</item>
-<item>
-<title>【索问经验】项目的完全重构步骤</title>
-<link>https://forum.trae.cn/t/topic/182562</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182562</guid>
-<pubDate>Sat, 26 Sep 2026 13:39:12 +0000</pubDate>
-<category>互动交流</category>
-<description>各位有项目重构经验的伙伴都是怎么做的，我现在有一个需求，之前的一个图片博客项目已经十分完善了，但是受到前期经验不足和大模型能力，底层的框架并不优秀，埋藏了很多bug和雷，修修补补其实并不划算 
-所以现在打算彻底重构，在保持整体页面UI不变和…</description>
 </item>
 </channel>
 </rss>
