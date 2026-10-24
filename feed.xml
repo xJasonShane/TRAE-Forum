@@ -5,7 +5,41 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Sat, 24 Oct 2026 07:03:00 +0000</lastBuildDate>
+<lastBuildDate>Sat, 24 Oct 2026 12:31:53 +0000</lastBuildDate>
+<item>
+<title>TRAE的动态UI图美观度随着模型强度而提升</title>
+<link>https://forum.trae.cn/t/topic/379629</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/379629</guid>
+<pubDate>Sat, 24 Oct 2026 11:36:50 +0000</pubDate>
+<category>互动交流</category>
+<description>Qwen3.8-Max 
+  
+还是要接着优化，不要和模型强度强绑定</description>
+</item>
+<item>
+<title>知乎×魔搭社区发布《AI开发者生态白皮书2026》分享</title>
+<link>https://forum.trae.cn/t/topic/365580</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/365580</guid>
+<pubDate>Sat, 24 Oct 2026 10:32:10 +0000</pubDate>
+<category>AI充电站</category>
+<description>AI开发者生态白皮书2026_知乎×魔搭社区.pdf (6.6 MB)</description>
+</item>
+<item>
+<title>TRAE内置模型上新Kimi-K3.1-Pro</title>
+<link>https://forum.trae.cn/t/topic/358817</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/358817</guid>
+<pubDate>Sat, 24 Oct 2026 09:08:46 +0000</pubDate>
+<category>互动交流</category>
+<description></description>
+</item>
+<item>
+<title>1024我还在拼命的迭代软件烧积分</title>
+<link>https://forum.trae.cn/t/topic/358815</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/358815</guid>
+<pubDate>Sat, 24 Oct 2026 09:06:20 +0000</pubDate>
+<category>互动交流</category>
+<description>我的Beta-0.5今晚出来~</description>
+</item>
 <item>
 <title>Kimi-K3.1-Pro荣登Artificial Analysis全球第四</title>
 <link>https://forum.trae.cn/t/topic/326641</link>
@@ -404,40 +438,6 @@ Hy-Memory-30B-A3B 模型权重下载：https://huggingface.co…</description>
 <pubDate>Fri, 02 Oct 2026 10:02:50 +0000</pubDate>
 <category>互动交流</category>
 <description>原作者：【AI大横评】让11家AI做33款游戏，谁才是游戏开发之王？_哔哩哔哩_bilibili</description>
-</item>
-<item>
-<title>Qwen-Image-2.1模型拿下开源文生图榜单第一名</title>
-<link>https://forum.trae.cn/t/topic/182905</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182905</guid>
-<pubDate>Fri, 02 Oct 2026 08:48:12 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>大模型智能榜竞争日益激烈，最新AA智能榜个人评价</title>
-<link>https://forum.trae.cn/t/topic/182902</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182902</guid>
-<pubDate>Fri, 02 Oct 2026 07:41:28 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>米哈游入局AI大模型，拟定三年内投入1000亿，冲入国产第一梯队</title>
-<link>https://forum.trae.cn/t/topic/182748</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182748</guid>
-<pubDate>Tue, 29 Sep 2026 07:40:05 +0000</pubDate>
-<category>AI充电站</category>
-<description>米哈游能否摆脱供应商合作，而自己去训练大模型 
-年初的米哈游自研数字人模型展露头角，但在Chat类模型还是依靠MiniMax-Her系列创建AI NPC 
-目前成型的游戏均小批量内测了AI NPC，而即将上线的《雨之城》更是直接借助LLM构…</description>
-</item>
-<item>
-<title>Agent能力再度增强，主动输出架构图</title>
-<link>https://forum.trae.cn/t/topic/182604</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/182604</guid>
-<pubDate>Sun, 27 Sep 2026 10:59:36 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
 </item>
 </channel>
 </rss>
