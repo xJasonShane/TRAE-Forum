@@ -5,7 +5,25 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Mon, 02 Nov 2026 01:23:20 +0000</lastBuildDate>
+<lastBuildDate>Mon, 02 Nov 2026 09:07:26 +0000</lastBuildDate>
+<item>
+<title>TRAE宝的作用是更利于小白，进一步拉低门槛</title>
+<link>https://forum.trae.cn/t/topic/464453</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/464453</guid>
+<pubDate>Mon, 02 Nov 2026 06:43:05 +0000</pubDate>
+<category>互动交流</category>
+<description>写不好提示词？那就直接自然语言，TRAE宝帮你优化 
+  
+并且限免期刷一刷高贵模型</description>
+</item>
+<item>
+<title>个人助理——TRAE宝限免期的逻辑试验分析</title>
+<link>https://forum.trae.cn/t/topic/464406</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/464406</guid>
+<pubDate>Mon, 02 Nov 2026 01:55:14 +0000</pubDate>
+<category>互动交流</category>
+<description>在v3.4.13版本明确了当前TRAE宝属于限免期，所以我抽时间对其进行了一段测试发现了一个神奇的设置，即TRAE宝在Agent端触发的消息队列均采用Auto模型，但一旦有任务进入了具体项目，这时会触发双端也就是Agent和IDE端同步消息…</description>
+</item>
 <item>
 <title>【优质项目推荐丨开源项目】AIHOT——AI行业动态聚合网站</title>
 <link>https://forum.trae.cn/t/topic/464157</link>
@@ -432,22 +450,6 @@ Hy-Memory-30B-A3B 模型权重下载：https://huggingface.co…</description>
 <link>https://forum.trae.cn/t/topic/278103</link>
 <guid isPermaLink="true">https://forum.trae.cn/t/topic/278103</guid>
 <pubDate>Wed, 14 Oct 2026 12:50:17 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>Gemini-4 Arena 定榜全球第五</title>
-<link>https://forum.trae.cn/t/topic/184093</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/184093</guid>
-<pubDate>Wed, 14 Oct 2026 03:08:43 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>Qwen的开源模型生态大厦已经建起，大量Qwen基座模型陆续发布</title>
-<link>https://forum.trae.cn/t/topic/184029</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/184029</guid>
-<pubDate>Tue, 13 Oct 2026 12:44:51 +0000</pubDate>
 <category>AI充电站</category>
 <description></description>
 </item>
