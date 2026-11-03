@@ -5,7 +5,31 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Tue, 03 Nov 2026 11:45:20 +0000</lastBuildDate>
+<lastBuildDate>Tue, 03 Nov 2026 19:18:16 +0000</lastBuildDate>
+<item>
+<title>AI圈四大玄学定律</title>
+<link>https://forum.trae.cn/t/topic/464743</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/464743</guid>
+<pubDate>Tue, 03 Nov 2026 12:09:35 +0000</pubDate>
+<category>互动交流</category>
+<description>DeepSeek 服务器一崩： 
+新模型要来了！！ 
+ChatGPT 突然降速降智： 
+新模型要来了！！ 
+Claude 开始大规模封号： 
+新模型要来了！！ 
+Gemini…… 
+新模型都发了，用户还没用上？？？:clown_face:</description>
+</item>
+<item>
+<title>AI最新前沿技术丨Latent Sparse Attention (LSA)二次方注意力机制</title>
+<link>https://forum.trae.cn/t/topic/464741</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/464741</guid>
+<pubDate>Tue, 03 Nov 2026 12:06:14 +0000</pubDate>
+<category>AI充电站</category>
+<description>基于Transformer大模型架构机制，目前人类还是主要集中攻克注意力层，本次LSA采用二次方注意力机制，借助潜在的稀疏注意力完成了10M上下文的注意力突破！ 
+相关论文： [2610.42147] Latent Sparse Atten…</description>
+</item>
 <item>
 <title>SOLO全屏模式下会话内容与功能栏UI重叠</title>
 <link>https://forum.trae.cn/t/topic/464591</link>
@@ -442,25 +466,6 @@ Github： deepseek-ai/DeepInfer: DeepInfer: High-performance, large-scale infere
 
 Hy Memory SDK&amp;MemHub：https://github.com/Tencent-Hunyuan/Hy-Memory
 Hy-Memory-30B-A3B 模型权重下载：https://huggingface.co…</description>
-</item>
-<item>
-<title>想要解决问题就要先说清楚问题</title>
-<link>https://forum.trae.cn/t/topic/325558</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/325558</guid>
-<pubDate>Fri, 16 Oct 2026 05:50:49 +0000</pubDate>
-<category>互动交流</category>
-<description>随着社区人越来越多，问题反馈也越来越多，这是一个正常的现象，但为了节约自己和解决问题人员的精力和时间，有必要聊一聊描述问题的技术，本来这不应该成为一个话题，但是现在让人看不懂或者需要二次补充细节的问题太多了(在这里也透个底，面对低级问题和明…</description>
-</item>
-<item>
-<title>MiMo V2.6 Pro模型荣登Arena开源模型Agent能力榜单第一名</title>
-<link>https://forum.trae.cn/t/topic/325525</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/325525</guid>
-<pubDate>Fri, 16 Oct 2026 02:54:18 +0000</pubDate>
-<category>AI充电站</category>
-<description>原文引用 
-
-激动人心的更新：在开源模型的 Agent Arena 中出现了一位新的领导者。由@XiaomiMiMo的 MiMo V2.6 Pro 以 +3.8% 的净提升荣登 #1 宝座！ 
-本周早些时候，我们在 Agent A…</description>
 </item>
 </channel>
 </rss>
