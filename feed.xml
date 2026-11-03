@@ -5,7 +5,21 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Mon, 02 Nov 2026 20:07:31 +0000</lastBuildDate>
+<lastBuildDate>Tue, 03 Nov 2026 03:23:04 +0000</lastBuildDate>
+<item>
+<title>SOLO全屏模式下会话内容与功能栏UI重叠</title>
+<link>https://forum.trae.cn/t/topic/464591</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/464591</guid>
+<pubDate>Tue, 03 Nov 2026 02:26:01 +0000</pubDate>
+<category>问题求助</category>
+<description>你的运行环境（版本号「点击帮助-关于-复制」）： 
+
+TRAE CN 
+版本: 3.4.13 
+VSCode 版本: 1.107.1 
+提交: 18cb5d04f38268251cd6fe91555dd2b55cd5f959 
+日期: 20…</description>
+</item>
 <item>
 <title>【第一期结营作业】欢迎体验我的小程序：绘世手账</title>
 <link>https://forum.trae.cn/t/topic/464537</link>
@@ -447,14 +461,6 @@ Hy-Memory-30B-A3B 模型权重下载：https://huggingface.co…</description>
 
 激动人心的更新：在开源模型的 Agent Arena 中出现了一位新的领导者。由@XiaomiMiMo的 MiMo V2.6 Pro 以 +3.8% 的净提升荣登 #1 宝座！ 
 本周早些时候，我们在 Agent A…</description>
-</item>
-<item>
-<title>TRAE 已支持自定义启动面板功能</title>
-<link>https://forum.trae.cn/t/topic/325476</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/325476</guid>
-<pubDate>Thu, 15 Oct 2026 10:32:18 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
 </item>
 </channel>
 </rss>
