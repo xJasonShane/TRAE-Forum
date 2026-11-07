@@ -5,7 +5,34 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Sat, 07 Nov 2026 00:00:22 +0000</lastBuildDate>
+<lastBuildDate>Sat, 07 Nov 2026 05:49:14 +0000</lastBuildDate>
+<item>
+<title>Artificial Analysis 推出 VIALS-AA 榜单，评测科学图像推理</title>
+<link>https://forum.trae.cn/t/topic/465361</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/465361</guid>
+<pubDate>Sat, 07 Nov 2026 01:58:29 +0000</pubDate>
+<category>AI充电站</category>
+<description>Artificial Analysis 推出 VIALS-AA 榜单，使用 Handshake AI 的 VIALS 基准评测 AI 模型解读生命科学研究图像的能力。 
+该基准涵盖 8 个领域的 161 项任务，每项任务重复测试 3 次，得…</description>
+</item>
+<item>
+<title>豆包工作个人版取消 5 小时额度限制</title>
+<link>https://forum.trae.cn/t/topic/465360</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/465360</guid>
+<pubDate>Sat, 07 Nov 2026 01:57:32 +0000</pubDate>
+<category>AI充电站</category>
+<description>11 月 6 日起，豆包工作个人版取消 5 小时额度限制，用户可以在周额度范围内，按照工作节奏灵活安排使用时间。 
+此前，即使周额度仍有剩余，用户达到 5 小时额度上限后，也需等待短周期额度重置。周额度及其他使用规则仍以对应套餐为准，付费用…</description>
+</item>
+<item>
+<title>Qwen发海报预热新一代旗舰模型，Qoder中出现疑似Qwen4模型</title>
+<link>https://forum.trae.cn/t/topic/465359</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/465359</guid>
+<pubDate>Sat, 07 Nov 2026 01:55:15 +0000</pubDate>
+<category>AI充电站</category>
+<description>阿里巴巴Qwen 官方账号发布一张海报，画面写有「北冥有鱼 其名为_」，配文只有一句 The becoming begins。 
+随后 Qwen Developers 账号发文解释，海报中文出自中国古代经典《庄子》，说的是北方大海中一条名为…</description>
+</item>
 <item>
 <title>模型迭代比起一家独大，我更希望百家争鸣</title>
 <link>https://forum.trae.cn/t/topic/465298</link>
@@ -437,30 +464,6 @@ Github： deepseek-ai/DeepInfer: DeepInfer: High-performance, large-scale infere
 <guid isPermaLink="true">https://forum.trae.cn/t/topic/325995</guid>
 <pubDate>Tue, 20 Oct 2026 03:03:16 +0000</pubDate>
 <category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>GLM-Omni模型灰度，疑似5.5版本测试</title>
-<link>https://forum.trae.cn/t/topic/325942</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/325942</guid>
-<pubDate>Mon, 19 Oct 2026 15:20:43 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>MiniMax-M3.1-Flash正式版发布，五档思考强度</title>
-<link>https://forum.trae.cn/t/topic/325910</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/325910</guid>
-<pubDate>Mon, 19 Oct 2026 11:08:02 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>AA智能榜更新，DeepSeek-V4.1-Flash-1017获45分与GLM-5.3持平</title>
-<link>https://forum.trae.cn/t/topic/325882</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/325882</guid>
-<pubDate>Mon, 19 Oct 2026 08:50:41 +0000</pubDate>
-<category>AI充电站</category>
 <description></description>
 </item>
 </channel>
