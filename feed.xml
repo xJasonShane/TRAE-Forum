@@ -5,7 +5,66 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Mon, 09 Nov 2026 05:35:39 +0000</lastBuildDate>
+<lastBuildDate>Mon, 09 Nov 2026 15:44:24 +0000</lastBuildDate>
+<item>
+<title>【官方插件推荐】：代码审查报告</title>
+<link>https://forum.trae.cn/t/topic/465636</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/465636</guid>
+<pubDate>Mon, 09 Nov 2026 11:16:02 +0000</pubDate>
+<category>互动交流</category>
+<description>今天试用了一下官方的插件：代码审查报告，感觉效果还可以，对于中型仓库以上会有很清晰的分析报告输出。 
+  
+个人真实项目举例： 
+ 
+ 
+可以查看所有二级报告，以及一键修复检索出的问题</description>
+</item>
+<item>
+<title>虽然这个话题你们会痛恨我，但是我的积分用不完了</title>
+<link>https://forum.trae.cn/t/topic/465632</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/465632</guid>
+<pubDate>Mon, 09 Nov 2026 10:40:43 +0000</pubDate>
+<category>互动交流</category>
+<description>每天都在被积分过期追着走，但是活动积分一直来 :melting_face: 
+ 
+ 
+每天都在被推着走想需求</description>
+</item>
+<item>
+<title>生成更真实，百轮编辑更稳定｜Seedream 5.5 发布</title>
+<link>https://forum.trae.cn/t/topic/465626</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/465626</guid>
+<pubDate>Mon, 09 Nov 2026 09:55:58 +0000</pubDate>
+<category>AI充电站</category>
+<description>更稳定的多轮编辑：实现非编辑区域的像素级保持，消除色彩偏移，降低连续修改中的细节丢失与画质衰减，支持围绕同一作品展开多达 100 轮的持续创作。 
+
+
+原生 RGBA 透明素材生成：直接输出带 Alpha 通道的透明或半透明图像，精细处…</description>
+</item>
+<item>
+<title>OpenMOSS的MOSS-Image势不可挡，成为历史热度最高的开源图像模型</title>
+<link>https://forum.trae.cn/t/topic/465591</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/465591</guid>
+<pubDate>Mon, 09 Nov 2026 06:32:38 +0000</pubDate>
+<category>AI充电站</category>
+<description>前沿开源图像模型发展速度进入爆发期了，qwen基底模型还是证明了含金量</description>
+</item>
+<item>
+<title>【工具分享】代码验证全景图</title>
+<link>https://forum.trae.cn/t/topic/465582</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/465582</guid>
+<pubDate>Mon, 09 Nov 2026 05:41:25 +0000</pubDate>
+<category>AI充电站</category>
+<description>网站： 代码验证全景图 · 工具链接版</description>
+</item>
+<item>
+<title>AI领域工具清单推荐</title>
+<link>https://forum.trae.cn/t/topic/465581</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/465581</guid>
+<pubDate>Mon, 09 Nov 2026 05:37:31 +0000</pubDate>
+<category>互动交流</category>
+<description></description>
+</item>
 <item>
 <title>Qwen4-27B于GameFeel游戏开发基准测试获得14.9分处于第一梯队</title>
 <link>https://forum.trae.cn/t/topic/465480</link>
@@ -414,57 +473,6 @@ Demo链接： 10…</description>
 <pubDate>Wed, 21 Oct 2026 08:20:50 +0000</pubDate>
 <category>互动交流</category>
 <description></description>
-</item>
-<item>
-<title>能感受到Agent的结构图和动态UI能力在提升，但还是差点意思</title>
-<link>https://forum.trae.cn/t/topic/326176</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/326176</guid>
-<pubDate>Wed, 21 Oct 2026 02:56:29 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>OpenRouter今天截止到现在的调用榜，还能看到历史的眼泪</title>
-<link>https://forum.trae.cn/t/topic/326173</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/326173</guid>
-<pubDate>Wed, 21 Oct 2026 02:46:55 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>GLM-5.3-Flash积分倍率上调至0.08x</title>
-<link>https://forum.trae.cn/t/topic/326161</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/326161</guid>
-<pubDate>Wed, 21 Oct 2026 02:15:42 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>Unsloth AI团队量化DeepSeek V4.1-Flash-1017发布，实现1-bit 保留约 88.2% 准确率</title>
-<link>https://forum.trae.cn/t/topic/326117</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/326117</guid>
-<pubDate>Tue, 20 Oct 2026 14:47:26 +0000</pubDate>
-<category>AI充电站</category>
-<description>DeepSeek V4.1-Flash-1017 现可本地运行！ 
-我们实现了 1-bit 保留约 88.2% 准确率，同时将大小从 508GB 缩小至 250GB（−52%）。 
-在 128GB+ RAM 设备上运行。V4.1 Flas…</description>
-</item>
-<item>
-<title>DeepSeek开源推理框架：走向真正普惠的未来</title>
-<link>https://forum.trae.cn/t/topic/326086</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/326086</guid>
-<pubDate>Tue, 20 Oct 2026 09:13:43 +0000</pubDate>
-<category>AI充电站</category>
-<description>原文：DeepSeek开源推理框架：走向真正普惠的未来 
-Github： deepseek-ai/DeepInfer: DeepInfer: High-performance, large-scale inference framework…</description>
-</item>
-<item>
-<title>【模型吐槽帖】我很少直面说一个模型弱鸡，但MiniMax是其中之一</title>
-<link>https://forum.trae.cn/t/topic/326006</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/326006</guid>
-<pubDate>Tue, 20 Oct 2026 03:39:52 +0000</pubDate>
-<category>互动交流</category>
-<description>M3危机事件只要是关注AI圈比较频繁的都应该了解，我曾认为国内很少能够突破M3危机事件，但如果它是M3.1就不奇怪了，这个模型强度早在匿名模型——太空兔出来时，我便在MiniMax官方交流群说了，如果是M3.1就不要拿出来丢人了，但是官方认…</description>
 </item>
 </channel>
 </rss>
