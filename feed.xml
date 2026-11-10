@@ -5,7 +5,35 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Tue, 10 Nov 2026 09:30:24 +0000</lastBuildDate>
+<lastBuildDate>Tue, 10 Nov 2026 17:36:01 +0000</lastBuildDate>
+<item>
+<title>MiniMax-H3-Image正式开源发布，跻身生图SOTA队列</title>
+<link>https://forum.trae.cn/t/topic/559698</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/559698</guid>
+<pubDate>Tue, 10 Nov 2026 15:19:33 +0000</pubDate>
+<category>互动交流</category>
+<description>开源地址： MiniMaxAI/MiniMax-H3-Image · Hugging Face 
+公众号文章： MiniMax H3-Image 开源：让 4K 图像生成进入 10 秒时代 
+文本编码器Qwen3-VL，再一次伟大 
+  
+C…</description>
+</item>
+<item>
+<title>用量管理新增即将到期提醒</title>
+<link>https://forum.trae.cn/t/topic/555267</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/555267</guid>
+<pubDate>Tue, 10 Nov 2026 14:23:19 +0000</pubDate>
+<category>互动交流</category>
+<description></description>
+</item>
+<item>
+<title>MiniMax-H3-Image即将上线，MM官方选择与H3同样开源政策，图片质感接近GPT</title>
+<link>https://forum.trae.cn/t/topic/547261</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/547261</guid>
+<pubDate>Tue, 10 Nov 2026 13:12:03 +0000</pubDate>
+<category>AI充电站</category>
+<description></description>
+</item>
 <item>
 <title>Fable5.2一句话生成FPS游戏效果丨转载</title>
 <link>https://forum.trae.cn/t/topic/482667</link>
@@ -445,38 +473,6 @@ TRAE制作…</description>
 <description>上海人工智能实验室发布书生-A1.5（Sage-A1.5）并开放模型权重，重点提升智能体编排、自主验证与开放式科学探索能力。 
 该模型采用MoE架构，总参数为35B，激活参数为3B，原生支持256K上下文，通过YaRN可扩展至512K。 
 模…</description>
-</item>
-<item>
-<title>Kimi官方确定K3.1模型，预计明日程序员节上线</title>
-<link>https://forum.trae.cn/t/topic/326478</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/326478</guid>
-<pubDate>Fri, 23 Oct 2026 02:24:39 +0000</pubDate>
-<category>互动交流</category>
-<description>官方视频截图</description>
-</item>
-<item>
-<title>【Qwen4】Anena竞技场代号Kalmia模型确定为Qwen系列新模型</title>
-<link>https://forum.trae.cn/t/topic/326444</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/326444</guid>
-<pubDate>Thu, 22 Oct 2026 13:25:43 +0000</pubDate>
-<category>互动交流</category>
-<description>这个1024程序员节很热闹，估计Qwen4和Kimi-K3.1撞车发布</description>
-</item>
-<item>
-<title>我们也来一场大模型盲测吧~</title>
-<link>https://forum.trae.cn/t/topic/326425</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/326425</guid>
-<pubDate>Thu, 22 Oct 2026 09:42:59 +0000</pubDate>
-<category>互动交流</category>
-<description>以下两个3D模型是由两个盲测模型同一提示词制作出来的，大家觉得哪个好一点呢？ 
-
-提示词 
-设计一个中国古风建筑的3D模型，要求可以3D旋转各角度查看，并且支持春夏秋冬场景变换 
-
-投票
-A模型： 
-  
-源文件：A.zip (212.5 …</description>
 </item>
 </channel>
 </rss>
