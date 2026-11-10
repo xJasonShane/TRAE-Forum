@@ -5,7 +5,45 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Tue, 10 Nov 2026 00:02:22 +0000</lastBuildDate>
+<lastBuildDate>Tue, 10 Nov 2026 09:30:24 +0000</lastBuildDate>
+<item>
+<title>Fable5.2一句话生成FPS游戏效果丨转载</title>
+<link>https://forum.trae.cn/t/topic/482667</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/482667</guid>
+<pubDate>Tue, 10 Nov 2026 07:58:54 +0000</pubDate>
+<category>互动交流</category>
+<description>注：不要在乎画质，为了论坛直接预览主动压缩画质</description>
+</item>
+<item>
+<title>Fable5.2 Arena盲测前端榜单已出，领先全球第一</title>
+<link>https://forum.trae.cn/t/topic/465715</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/465715</guid>
+<pubDate>Tue, 10 Nov 2026 04:30:45 +0000</pubDate>
+<category>AI充电站</category>
+<description></description>
+</item>
+<item>
+<title>SOLO模式下用量管理界面日历视图层级显示错误，已持续十几个版本</title>
+<link>https://forum.trae.cn/t/topic/465710</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/465710</guid>
+<pubDate>Tue, 10 Nov 2026 04:12:34 +0000</pubDate>
+<category>问题求助</category>
+<description>你的运行环境（版本号「点击帮助-关于-复制」）： 
+
+TRAE CN 
+版本: 3.4.17 
+VSCode 版本: 1.107.1 
+提交: d654d294a690adb43b5bb35d5b37adf9f292cee0 
+日期: 20…</description>
+</item>
+<item>
+<title>接下来向我们走来的是Fable5.2，又一个定义新阶段的模型</title>
+<link>https://forum.trae.cn/t/topic/465677</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/465677</guid>
+<pubDate>Tue, 10 Nov 2026 02:04:08 +0000</pubDate>
+<category>AI充电站</category>
+<description>看了大概十几个不同角度的测试，强度确实拉满了，一句话完成CSGO并且可以流畅运行，但代价也十分明显，远超金价的定价让99.99%人根本接触不到它</description>
+</item>
 <item>
 <title>【官方插件推荐】：代码审查报告</title>
 <link>https://forum.trae.cn/t/topic/465636</link>
@@ -439,40 +477,6 @@ TRAE制作…</description>
 A模型： 
   
 源文件：A.zip (212.5 …</description>
-</item>
-<item>
-<title>【1024Builder作品秀】一个简易的1024BUG合并游戏</title>
-<link>https://forum.trae.cn/t/topic/326387</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/326387</guid>
-<pubDate>Thu, 22 Oct 2026 05:53:28 +0000</pubDate>
-<category>案例与作品</category>
-<description>作品介绍
-2048合并小游戏大家应该都玩过，基于这个游戏机制，我用TRAE制作了一个简易的1024合并小游戏，不同的是游戏主题为1024程序员节，里面包含git merge等指令，随着分数增多不断变更merge进度。 
-Demo链接： 10…</description>
-</item>
-<item>
-<title>【Kimi-K3.1】与爆料者预言一致Arena已出现Kibitz代号模型</title>
-<link>https://forum.trae.cn/t/topic/326383</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/326383</guid>
-<pubDate>Thu, 22 Oct 2026 05:21:43 +0000</pubDate>
-<category>AI充电站</category>
-<description>基于昨日爆料者 **SGLang中出现两个K3.1模型部署适配提交，其中一个已经在 Deepinfra 上运行K3.1部署**中同步宣称关注Arena竞技场可能出现的新代号模型，今日已经正式上线Kibitz代号模型，分词器与Kimi-K3系…</description>
-</item>
-<item>
-<title>这个互联网世界大厦缝缝补补摇摇欲坠</title>
-<link>https://forum.trae.cn/t/topic/326348</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/326348</guid>
-<pubDate>Thu, 22 Oct 2026 02:54:11 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>SGLang中出现两个K3.1模型部署适配提交，其中一个已经在 Deepinfra 上运行K3.1部署</title>
-<link>https://forum.trae.cn/t/topic/326237</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/326237</guid>
-<pubDate>Wed, 21 Oct 2026 08:20:50 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
 </item>
 </channel>
 </rss>
