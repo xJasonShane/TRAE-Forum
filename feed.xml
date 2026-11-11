@@ -5,7 +5,16 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Tue, 10 Nov 2026 23:01:51 +0000</lastBuildDate>
+<lastBuildDate>Wed, 11 Nov 2026 05:32:33 +0000</lastBuildDate>
+<item>
+<title>Qwen4已上线千问云，Token Plan已可以正式调用，马上正式发布</title>
+<link>https://forum.trae.cn/t/topic/593538</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/593538</guid>
+<pubDate>Wed, 11 Nov 2026 02:13:06 +0000</pubDate>
+<category>AI充电站</category>
+<description>官方文章： Qwen4，要来了 
+千问云Token Plan：Token Plan 模型订阅计划</description>
+</item>
 <item>
 <title>MiniMax-H3-Image正式开源发布，跻身生图SOTA队列</title>
 <link>https://forum.trae.cn/t/topic/559698</link>
@@ -463,16 +472,6 @@ TRAE制作…</description>
 <category>AI充电站</category>
 <description>米哈游崩坏 AI 团队联合清华大学等发布并开源 GameScaling 游戏操作模型，基于 Qwen3.5 视觉语言模型进行持续预训练，参数量覆盖 0.8B 至 27B。 
 模型接收当前游戏画面及近期画面、动作历史，每次输出未来 200 毫…</description>
-</item>
-<item>
-<title>上海人工智能实验室发布 Sage-A1.5</title>
-<link>https://forum.trae.cn/t/topic/326508</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/326508</guid>
-<pubDate>Fri, 23 Oct 2026 04:05:26 +0000</pubDate>
-<category>AI充电站</category>
-<description>上海人工智能实验室发布书生-A1.5（Sage-A1.5）并开放模型权重，重点提升智能体编排、自主验证与开放式科学探索能力。 
-该模型采用MoE架构，总参数为35B，激活参数为3B，原生支持256K上下文，通过YaRN可扩展至512K。 
-模…</description>
 </item>
 </channel>
 </rss>
