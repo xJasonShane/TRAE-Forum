@@ -5,7 +5,27 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Wed, 11 Nov 2026 13:53:09 +0000</lastBuildDate>
+<lastBuildDate>Wed, 11 Nov 2026 21:09:56 +0000</lastBuildDate>
+<item>
+<title>Qwen4辜负众望的鹈鹕测试</title>
+<link>https://forum.trae.cn/t/topic/601952</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/601952</guid>
+<pubDate>Wed, 11 Nov 2026 15:18:32 +0000</pubDate>
+<category>互动交流</category>
+<description></description>
+</item>
+<item>
+<title>【TRAE更新日志】v3.4.18-2026 年 11 月 10 日</title>
+<link>https://forum.trae.cn/t/topic/601950</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/601950</guid>
+<pubDate>Wed, 11 Nov 2026 14:45:36 +0000</pubDate>
+<category>互动交流</category>
+<description>新增功能
+
+支持在打开或创建项目时确认目录信任；未信任目录中的项目规则、技能、命令和 Hooks 不会加载，终端命令也不会运行。
+支持在 Agent Window 中直接编辑全局和项目 Hooks 配置，并可在读取或保存失败后重试。
+支持在…</description>
+</item>
 <item>
 <title>真正的炫富是拿Kimi-K3.1-Pro写小说</title>
 <link>https://forum.trae.cn/t/topic/601939</link>
@@ -451,26 +471,6 @@ Github开源仓库： 模匣(ModelVault)是Windows 本地 AI …</description>
 <pubDate>Sat, 24 Oct 2026 02:18:23 +0000</pubDate>
 <category>AI充电站</category>
 <description></description>
-</item>
-<item>
-<title>【超前模型测试】Kimi-K3.1-Pro模型预览前端效果展示视频</title>
-<link>https://forum.trae.cn/t/topic/326611</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/326611</guid>
-<pubDate>Fri, 23 Oct 2026 13:23:15 +0000</pubDate>
-<category>AI充电站</category>
-<description>注：不要在意画质，为上传论坛已经进行一轮视频压缩</description>
-</item>
-<item>
-<title>【1024Builder作品秀】合成大西瓜-汉字版丨简易web小游戏</title>
-<link>https://forum.trae.cn/t/topic/326523</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/326523</guid>
-<pubDate>Fri, 23 Oct 2026 05:42:52 +0000</pubDate>
-<category>案例与作品</category>
-<description>作品介绍
-继上一个1024BUG合并游戏之后，我又来复刻经典游戏合成大西瓜，以该游戏核心玩法为基础，修改成为合成汉字版本，并且添加了五行相克和隐藏龙脉汉字玩法。 
-体验地址： 合字成境 · 汉字合成大西瓜 - TRAE 
-  
-TRAE制作…</description>
 </item>
 </channel>
 </rss>
