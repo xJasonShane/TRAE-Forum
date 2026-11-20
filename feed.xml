@@ -5,7 +5,21 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Thu, 19 Nov 2026 22:01:37 +0000</lastBuildDate>
+<lastBuildDate>Fri, 20 Nov 2026 06:36:34 +0000</lastBuildDate>
+<item>
+<title>Hy4 正式开源，发布 System Card，770B-A49B</title>
+<link>https://forum.trae.cn/t/topic/604783</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/604783</guid>
+<pubDate>Fri, 20 Nov 2026 04:03:42 +0000</pubDate>
+<category>AI充电站</category>
+<description>[GitHub] https://github.com/Tencent-Hunyuan/Hy4 
+
+
+[Hugging Face] https://huggingface.co/tencent/Hy4 
+
+
+[ModelScope…</description>
+</item>
 <item>
 <title>Hy4-flash开源FP8与Base双版本，224B-A12B参数</title>
 <link>https://forum.trae.cn/t/topic/604550</link>
@@ -467,14 +481,6 @@ VSCode 版本: 1.107.1
 <description>写不好提示词？那就直接自然语言，TRAE宝帮你优化 
   
 并且限免期刷一刷高贵模型</description>
-</item>
-<item>
-<title>个人助理——TRAE宝限免期的逻辑试验分析</title>
-<link>https://forum.trae.cn/t/topic/464406</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/464406</guid>
-<pubDate>Mon, 02 Nov 2026 01:55:14 +0000</pubDate>
-<category>互动交流</category>
-<description>在v3.4.13版本明确了当前TRAE宝属于限免期，所以我抽时间对其进行了一段测试发现了一个神奇的设置，即TRAE宝在Agent端触发的消息队列均采用Auto模型，但一旦有任务进入了具体项目，这时会触发双端也就是Agent和IDE端同步消息…</description>
 </item>
 </channel>
 </rss>
