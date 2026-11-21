@@ -5,7 +5,16 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Sat, 21 Nov 2026 06:28:15 +0000</lastBuildDate>
+<lastBuildDate>Sat, 21 Nov 2026 15:59:55 +0000</lastBuildDate>
+<item>
+<title>从腾讯混元团队的采访回答中，我们需要关注以下几个值得期待的信息！</title>
+<link>https://forum.trae.cn/t/topic/604936</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/604936</guid>
+<pubDate>Sat, 21 Nov 2026 08:27:04 +0000</pubDate>
+<category>AI充电站</category>
+<description>在刚刚，腾讯混元团队公开了社区网友提问及其团队的正面回复，结合国模开源发展趋势和期待，我个人认为以下信息值得我们关注。 
+注：以下内容均源自腾讯混元公开信息。</description>
+</item>
 <item>
 <title>用中文搜 140 万张免费像素图：pixel-search-zh</title>
 <link>https://forum.trae.cn/t/topic/604922</link>
@@ -463,20 +472,6 @@ Gemini……
 <category>AI充电站</category>
 <description>基于Transformer大模型架构机制，目前人类还是主要集中攻克注意力层，本次LSA采用二次方注意力机制，借助潜在的稀疏注意力完成了10M上下文的注意力突破！ 
 相关论文： [2610.42147] Latent Sparse Atten…</description>
-</item>
-<item>
-<title>SOLO全屏模式下会话内容与功能栏UI重叠</title>
-<link>https://forum.trae.cn/t/topic/464591</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/464591</guid>
-<pubDate>Tue, 03 Nov 2026 02:26:01 +0000</pubDate>
-<category>问题求助</category>
-<description>你的运行环境（版本号「点击帮助-关于-复制」）： 
-
-TRAE CN 
-版本: 3.4.13 
-VSCode 版本: 1.107.1 
-提交: 18cb5d04f38268251cd6fe91555dd2b55cd5f959 
-日期: 20…</description>
 </item>
 </channel>
 </rss>
