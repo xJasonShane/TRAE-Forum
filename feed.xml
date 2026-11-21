@@ -5,7 +5,33 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Fri, 20 Nov 2026 23:51:06 +0000</lastBuildDate>
+<lastBuildDate>Sat, 21 Nov 2026 06:28:15 +0000</lastBuildDate>
+<item>
+<title>用中文搜 140 万张免费像素图：pixel-search-zh</title>
+<link>https://forum.trae.cn/t/topic/604922</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/604922</guid>
+<pubDate>Sat, 21 Nov 2026 04:52:55 +0000</pubDate>
+<category>AI充电站</category>
+<description>Github： nativejie/pixel-search-zh</description>
+</item>
+<item>
+<title>微信开源全模态模型系列WeMM-Video</title>
+<link>https://forum.trae.cn/t/topic/604915</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/604915</guid>
+<pubDate>Sat, 21 Nov 2026 02:48:31 +0000</pubDate>
+<category>AI充电站</category>
+<description>腾讯以Apache 2.0协议在GitHub和Hugging Face开源中英双语全模态模型系列WeMM-Video。 
+系列包含2B、4B、9B稠密模型和35B-A3B混合专家模型，支持文本、图像、音频和视频输入，处理视频时可同时利用画面…</description>
+</item>
+<item>
+<title>数学家称与 Claude 合作证明黎曼猜想</title>
+<link>https://forum.trae.cn/t/topic/604914</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/604914</guid>
+<pubDate>Sat, 21 Nov 2026 02:47:50 +0000</pubDate>
+<category>AI充电站</category>
+<description>数学家 Levent Alpöge 在个人网站发布说明，称与 Claude 模型合作发现了数论经典难题黎曼猜想的证明，并称方法可推广至广义黎曼猜想。 
+他称已把论证无假设地形式化为 Lean 代码，完整写出的证明稿超过 25 万页，目前放出…</description>
+</item>
 <item>
 <title>Hy4 正式开源，发布 System Card，770B-A49B</title>
 <link>https://forum.trae.cn/t/topic/604783</link>
@@ -451,36 +477,6 @@ TRAE CN
 VSCode 版本: 1.107.1 
 提交: 18cb5d04f38268251cd6fe91555dd2b55cd5f959 
 日期: 20…</description>
-</item>
-<item>
-<title>【第一期结营作业】欢迎体验我的小程序：绘世手账</title>
-<link>https://forum.trae.cn/t/topic/464537</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/464537</guid>
-<pubDate>Mon, 02 Nov 2026 13:10:09 +0000</pubDate>
-<category>官方训练营</category>
-<description>一、小程序介绍 
-
-小程序名称：绘世手账
-面向对象：喜欢旅游和打卡的年轻代用户
-一句话介绍：绘世手账是一款基于地理位置的旅行足迹记录小程序。它以「地图」为核心，让你在每个到过的地方留下带照片、心情与故事的手账记录，并自动生成专属于你的足迹地…</description>
-</item>
-<item>
-<title>TRAE宝丨Bot，一个将离散功能聚合成数字员工的实战帖</title>
-<link>https://forum.trae.cn/t/topic/464512</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/464512</guid>
-<pubDate>Mon, 02 Nov 2026 11:11:02 +0000</pubDate>
-<category>技巧分享</category>
-<description>在近半个月时间内，个人助理或者Bot的概念逐渐热了起来，其实这个概念并不新颖，因为在很早以前AI领域就出现很多工具，他们归根结底的核心功能都是作为个人助理的角色，例如年初爆火的小龙虾——OpenClaw，再到后续的Hermess等，无论什么…</description>
-</item>
-<item>
-<title>TRAE宝的作用是更利于小白，进一步拉低门槛</title>
-<link>https://forum.trae.cn/t/topic/464453</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/464453</guid>
-<pubDate>Mon, 02 Nov 2026 06:43:05 +0000</pubDate>
-<category>互动交流</category>
-<description>写不好提示词？那就直接自然语言，TRAE宝帮你优化 
-  
-并且限免期刷一刷高贵模型</description>
 </item>
 </channel>
 </rss>
