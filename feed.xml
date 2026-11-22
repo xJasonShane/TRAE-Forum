@@ -5,7 +5,35 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Sun, 22 Nov 2026 09:39:50 +0000</lastBuildDate>
+<lastBuildDate>Sun, 22 Nov 2026 17:42:04 +0000</lastBuildDate>
+<item>
+<title>GLM-5.4-Preview路由强度测试</title>
+<link>https://forum.trae.cn/t/topic/605077</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605077</guid>
+<pubDate>Sun, 22 Nov 2026 13:49:10 +0000</pubDate>
+<category>AI充电站</category>
+<description>MC游戏复刻测试(Arena盲测) 
+  
+ 
+ 
+在线地址： Voxelheim — Blocky Survival Sandbox</description>
+</item>
+<item>
+<title>确认AI突破数学难题：Lean 与 Mathlib 社区确认 Levent Alpöge 黎曼猜想证明正确</title>
+<link>https://forum.trae.cn/t/topic/605072</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605072</guid>
+<pubDate>Sun, 22 Nov 2026 12:23:17 +0000</pubDate>
+<category>AI充电站</category>
+<description>Lean 与 Mathlib 社区发表声明，确认斯坦福数学家 Levent Alpöge 的黎曼猜想证明正确。Alpöge 于 2026 年 11 月 20 日以 1700 万行 Lean 代码发布该证明，数十人独立运行得到相同结果，且验证…</description>
+</item>
+<item>
+<title>MiniMax老师，你可不能死啊</title>
+<link>https://forum.trae.cn/t/topic/605059</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605059</guid>
+<pubDate>Sun, 22 Nov 2026 12:17:01 +0000</pubDate>
+<category>互动交流</category>
+<description>7月18日你还能200+， MiniMax老师，请不要这样，MiniMax老师</description>
+</item>
 <item>
 <title>从腾讯混元团队的采访回答中，我们需要关注以下几个值得期待的信息！</title>
 <link>https://forum.trae.cn/t/topic/604936</link>
@@ -440,38 +468,6 @@ VSCode 版本: 1.107.1
 <pubDate>Wed, 04 Nov 2026 07:48:43 +0000</pubDate>
 <category>AI充电站</category>
 <description></description>
-</item>
-<item>
-<title>Hy4模型正式发布</title>
-<link>https://forum.trae.cn/t/topic/464864</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/464864</guid>
-<pubDate>Wed, 04 Nov 2026 05:16:14 +0000</pubDate>
-<category>AI充电站</category>
-<description>官方介绍： 腾讯混元</description>
-</item>
-<item>
-<title>AI圈四大玄学定律</title>
-<link>https://forum.trae.cn/t/topic/464743</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/464743</guid>
-<pubDate>Tue, 03 Nov 2026 12:09:35 +0000</pubDate>
-<category>互动交流</category>
-<description>DeepSeek 服务器一崩： 
-新模型要来了！！ 
-ChatGPT 突然降速降智： 
-新模型要来了！！ 
-Claude 开始大规模封号： 
-新模型要来了！！ 
-Gemini…… 
-新模型都发了，用户还没用上？？？:clown_face:</description>
-</item>
-<item>
-<title>AI最新前沿技术丨Latent Sparse Attention (LSA)二次方注意力机制</title>
-<link>https://forum.trae.cn/t/topic/464741</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/464741</guid>
-<pubDate>Tue, 03 Nov 2026 12:06:14 +0000</pubDate>
-<category>AI充电站</category>
-<description>基于Transformer大模型架构机制，目前人类还是主要集中攻克注意力层，本次LSA采用二次方注意力机制，借助潜在的稀疏注意力完成了10M上下文的注意力突破！ 
-相关论文： [2610.42147] Latent Sparse Atten…</description>
 </item>
 </channel>
 </rss>
