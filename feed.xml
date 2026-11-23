@@ -5,7 +5,57 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Mon, 23 Nov 2026 06:48:47 +0000</lastBuildDate>
+<lastBuildDate>Mon, 23 Nov 2026 19:59:22 +0000</lastBuildDate>
+<item>
+<title>GLM-5.4来了</title>
+<link>https://forum.trae.cn/t/topic/605270</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605270</guid>
+<pubDate>Mon, 23 Nov 2026 14:18:35 +0000</pubDate>
+<category>互动交流</category>
+<description></description>
+</item>
+<item>
+<title>Astra 6.2、GLM 5.4 和 Neon 4的鹈鹕测试</title>
+<link>https://forum.trae.cn/t/topic/605262</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605262</guid>
+<pubDate>Mon, 23 Nov 2026 13:20:42 +0000</pubDate>
+<category>AI充电站</category>
+<description></description>
+</item>
+<item>
+<title>人类啊，何时才能向下一代进化发展</title>
+<link>https://forum.trae.cn/t/topic/605246</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605246</guid>
+<pubDate>Mon, 23 Nov 2026 11:09:35 +0000</pubDate>
+<category>互动交流</category>
+<description>今天GLM-5.4发布后，短短10小时，之前骂智谱骂到全家的人纷纷又过来赞美智谱，一顿鼓吹 
+为了博眼球也好。为了流量也罢，但这样双标下去的意义是啥呢，刚刚刷了一会小红书和b站。一群鼓吹智谱的账号点进去上一篇还是一片片辱骂，GLM群里同样，…</description>
+</item>
+<item>
+<title>GLM-5.4：瞄向泛Coding，首个Loop Transformer带来的惊喜</title>
+<link>https://forum.trae.cn/t/topic/605240</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605240</guid>
+<pubDate>Mon, 23 Nov 2026 10:17:07 +0000</pubDate>
+<category>AI充电站</category>
+<description>公众号：https://mp.weixin.qq.com/s/3mEIThoGiM6LhBAjUQAATw</description>
+</item>
+<item>
+<title>GLM-5.4确认TRAE day0，今晚期待一下</title>
+<link>https://forum.trae.cn/t/topic/605239</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605239</guid>
+<pubDate>Mon, 23 Nov 2026 10:11:51 +0000</pubDate>
+<category>互动交流</category>
+<description>信息源：智谱开放平台 
+与之前GLM-5.3 day0一致，公众号先发，凌晨day0，目前应该在适配中了</description>
+</item>
+<item>
+<title>GLM-5.4内测模型基准发布，正式版基准测试成绩等待官方发布</title>
+<link>https://forum.trae.cn/t/topic/605184</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605184</guid>
+<pubDate>Mon, 23 Nov 2026 06:50:34 +0000</pubDate>
+<category>AI充电站</category>
+<description></description>
+</item>
 <item>
 <title>GLM-5.4模型已上线智谱Coding Plan，旗舰原生多模态基座，预计近期开放API</title>
 <link>https://forum.trae.cn/t/topic/605155</link>
@@ -428,57 +478,6 @@ VSCode 版本: 1.107.1
 <category>AI充电站</category>
 <description>Artificial Analysis 推出 VIALS-AA 榜单，使用 Handshake AI 的 VIALS 基准评测 AI 模型解读生命科学研究图像的能力。 
 该基准涵盖 8 个领域的 161 项任务，每项任务重复测试 3 次，得…</description>
-</item>
-<item>
-<title>豆包工作个人版取消 5 小时额度限制</title>
-<link>https://forum.trae.cn/t/topic/465360</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/465360</guid>
-<pubDate>Sat, 07 Nov 2026 01:57:32 +0000</pubDate>
-<category>AI充电站</category>
-<description>11 月 6 日起，豆包工作个人版取消 5 小时额度限制，用户可以在周额度范围内，按照工作节奏灵活安排使用时间。 
-此前，即使周额度仍有剩余，用户达到 5 小时额度上限后，也需等待短周期额度重置。周额度及其他使用规则仍以对应套餐为准，付费用…</description>
-</item>
-<item>
-<title>Qwen发海报预热新一代旗舰模型，Qoder中出现疑似Qwen4模型</title>
-<link>https://forum.trae.cn/t/topic/465359</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/465359</guid>
-<pubDate>Sat, 07 Nov 2026 01:55:15 +0000</pubDate>
-<category>AI充电站</category>
-<description>阿里巴巴Qwen 官方账号发布一张海报，画面写有「北冥有鱼 其名为_」，配文只有一句 The becoming begins。 
-随后 Qwen Developers 账号发文解释，海报中文出自中国古代经典《庄子》，说的是北方大海中一条名为…</description>
-</item>
-<item>
-<title>模型迭代比起一家独大，我更希望百家争鸣</title>
-<link>https://forum.trae.cn/t/topic/465298</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/465298</guid>
-<pubDate>Fri, 06 Nov 2026 09:20:34 +0000</pubDate>
-<category>互动交流</category>
-<description>最近刷短视频，小红书等平台，看到不少人对于这几天新发布的模型评价贬大于褒，例如hy4、百度文心一言5.5等等，现在模型强度来看，它们确实不够看，甚至可以说挤不进前列。 
-但我觉得更不能少了它们，反而我希望这些模型变多，核心原因有两个，其一是…</description>
-</item>
-<item>
-<title>Kimi-K3.1-Pro在开源模型Agent能力榜获取第一，正偏差+5.1%</title>
-<link>https://forum.trae.cn/t/topic/465066</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/465066</guid>
-<pubDate>Thu, 05 Nov 2026 06:09:15 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>在文生图领域，GPT-Image依旧无解，新2.6模型依旧霸榜</title>
-<link>https://forum.trae.cn/t/topic/465065</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/465065</guid>
-<pubDate>Thu, 05 Nov 2026 06:06:06 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>【AI视频-转】大肥鱼应该不是有意的</title>
-<link>https://forum.trae.cn/t/topic/464976</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/464976</guid>
-<pubDate>Wed, 04 Nov 2026 14:18:43 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
 </item>
 </channel>
 </rss>
