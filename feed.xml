@@ -5,7 +5,24 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Mon, 23 Nov 2026 19:59:22 +0000</lastBuildDate>
+<lastBuildDate>Tue, 24 Nov 2026 04:42:32 +0000</lastBuildDate>
+<item>
+<title>因提示词和密钥外泄，OpenRouter 清退 Together AI、Phala、Novita 三家服务商</title>
+<link>https://forum.trae.cn/t/topic/605312</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605312</guid>
+<pubDate>Tue, 24 Nov 2026 01:47:52 +0000</pubDate>
+<category>AI充电站</category>
+<description>本次清退事件的起因，可以追溯到安全公司 Dragos 的测试。研究人员通过平台发送近 200 万条测试提示词，每条嵌入独特的追踪链接或诱饵凭证。随后，部分凭证被外部人员用于尝试访问受控测试系统和 AWS 测试账户，表明相关提示词已流出预期处…</description>
+</item>
+<item>
+<title>Anthropic 推出 Claude Ship 测试版，自动完成 PR 审查、修复与审批</title>
+<link>https://forum.trae.cn/t/topic/605311</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605311</guid>
+<pubDate>Tue, 24 Nov 2026 01:44:31 +0000</pubDate>
+<category>AI充电站</category>
+<description>Claude Ship 的工作方式：评审、修复、批准
+Claude Ship 由已正式发布的 Code Review 和两个处于测试阶段的新智能体组成：PR Steward 和 Claude Approvals。三者配合，把一个 PR 从评…</description>
+</item>
 <item>
 <title>GLM-5.4来了</title>
 <link>https://forum.trae.cn/t/topic/605270</link>
@@ -461,23 +478,6 @@ VSCode 版本: 1.107.1
 <pubDate>Mon, 09 Nov 2026 05:37:31 +0000</pubDate>
 <category>互动交流</category>
 <description></description>
-</item>
-<item>
-<title>Qwen4-27B于GameFeel游戏开发基准测试获得14.9分处于第一梯队</title>
-<link>https://forum.trae.cn/t/topic/465480</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/465480</guid>
-<pubDate>Sun, 08 Nov 2026 10:33:20 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>Artificial Analysis 推出 VIALS-AA 榜单，评测科学图像推理</title>
-<link>https://forum.trae.cn/t/topic/465361</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/465361</guid>
-<pubDate>Sat, 07 Nov 2026 01:58:29 +0000</pubDate>
-<category>AI充电站</category>
-<description>Artificial Analysis 推出 VIALS-AA 榜单，使用 Handshake AI 的 VIALS 基准评测 AI 模型解读生命科学研究图像的能力。 
-该基准涵盖 8 个领域的 161 项任务，每项任务重复测试 3 次，得…</description>
 </item>
 </channel>
 </rss>
