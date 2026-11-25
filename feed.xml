@@ -5,7 +5,69 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Wed, 25 Nov 2026 02:05:34 +0000</lastBuildDate>
+<lastBuildDate>Wed, 25 Nov 2026 14:02:04 +0000</lastBuildDate>
+<item>
+<title>MiniMax老师，你别这样，我害怕</title>
+<link>https://forum.trae.cn/t/topic/605620</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605620</guid>
+<pubDate>Wed, 25 Nov 2026 11:32:08 +0000</pubDate>
+<category>互动交流</category>
+<description></description>
+</item>
+<item>
+<title>关于一键部署后续收费方式的猜想</title>
+<link>https://forum.trae.cn/t/topic/605619</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605619</guid>
+<pubDate>Wed, 25 Nov 2026 11:28:47 +0000</pubDate>
+<category>互动交流</category>
+<description>这个功能出来挺久了，一直没有用过，主要是最近一直在搞软件，没研究web项目，今天部署了一个实验站点，研究了一下目前支持的参数，所以大概了解了可能限免结束后收费的点 
+首先一键部署用的还是传统的边缘函数部署方式，也就是所谓的静态部署。所以根据…</description>
+</item>
+<item>
+<title>IDE设置通用出现UI布局不协调问题</title>
+<link>https://forum.trae.cn/t/topic/605600</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605600</guid>
+<pubDate>Wed, 25 Nov 2026 09:50:53 +0000</pubDate>
+<category>问题求助</category>
+<description>你的运行环境（版本号「点击帮助-关于-复制」）： 
+
+TRAE CN 
+版本: 3.4.24 
+VSCode 版本: 1.107.1 
+提交: 3e3392c1a00eb4be6fbb1c998d0b2a87b9a7e657 
+日期: 20…</description>
+</item>
+<item>
+<title>有人想优化我的论坛项目么，开源项目一起共创啦~</title>
+<link>https://forum.trae.cn/t/topic/605598</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605598</guid>
+<pubDate>Wed, 25 Nov 2026 09:47:25 +0000</pubDate>
+<category>互动交流</category>
+<description>Github： ChaseToDream/TRAE-Forum: TRAE论坛用户话题跟踪web站点 
+主要功能是能够订阅TRAE论坛指定用户的帖子和数据统计 
+需求： 
+
+前端UI美观度，没啥新想法了
+网站新功能
+
+核心功能实现：借助Gi…</description>
+</item>
+<item>
+<title>大肥鱼和CC是表面姐妹嘛~</title>
+<link>https://forum.trae.cn/t/topic/605586</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605586</guid>
+<pubDate>Wed, 25 Nov 2026 08:53:45 +0000</pubDate>
+<category>互动交流</category>
+<description></description>
+</item>
+<item>
+<title>Arena新增3D榜单</title>
+<link>https://forum.trae.cn/t/topic/605543</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605543</guid>
+<pubDate>Wed, 25 Nov 2026 06:00:25 +0000</pubDate>
+<category>AI充电站</category>
+<description></description>
+</item>
 <item>
 <title>MiniMax H3家族日益壮大</title>
 <link>https://forum.trae.cn/t/topic/605423</link>
@@ -424,60 +486,6 @@ PaddleOCR-VL-1.6</description>
 文本编码器Qwen3-VL，再一次伟大 
   
 C…</description>
-</item>
-<item>
-<title>用量管理新增即将到期提醒</title>
-<link>https://forum.trae.cn/t/topic/555267</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/555267</guid>
-<pubDate>Tue, 10 Nov 2026 14:23:19 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>MiniMax-H3-Image即将上线，MM官方选择与H3同样开源政策，图片质感接近GPT</title>
-<link>https://forum.trae.cn/t/topic/547261</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/547261</guid>
-<pubDate>Tue, 10 Nov 2026 13:12:03 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>Fable5.2一句话生成FPS游戏效果丨转载</title>
-<link>https://forum.trae.cn/t/topic/482667</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/482667</guid>
-<pubDate>Tue, 10 Nov 2026 07:58:54 +0000</pubDate>
-<category>互动交流</category>
-<description>注：不要在乎画质，为了论坛直接预览主动压缩画质</description>
-</item>
-<item>
-<title>Fable5.2 Arena盲测前端榜单已出，领先全球第一</title>
-<link>https://forum.trae.cn/t/topic/465715</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/465715</guid>
-<pubDate>Tue, 10 Nov 2026 04:30:45 +0000</pubDate>
-<category>AI充电站</category>
-<description></description>
-</item>
-<item>
-<title>SOLO模式下用量管理界面日历视图层级显示错误，已持续十几个版本</title>
-<link>https://forum.trae.cn/t/topic/465710</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/465710</guid>
-<pubDate>Tue, 10 Nov 2026 04:12:34 +0000</pubDate>
-<category>问题求助</category>
-<description>你的运行环境（版本号「点击帮助-关于-复制」）： 
-
-TRAE CN 
-版本: 3.4.17 
-VSCode 版本: 1.107.1 
-提交: d654d294a690adb43b5bb35d5b37adf9f292cee0 
-日期: 20…</description>
-</item>
-<item>
-<title>接下来向我们走来的是Fable5.2，又一个定义新阶段的模型</title>
-<link>https://forum.trae.cn/t/topic/465677</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/465677</guid>
-<pubDate>Tue, 10 Nov 2026 02:04:08 +0000</pubDate>
-<category>AI充电站</category>
-<description>看了大概十几个不同角度的测试，强度确实拉满了，一句话完成CSGO并且可以流畅运行，但代价也十分明显，远超金价的定价让99.99%人根本接触不到它</description>
 </item>
 </channel>
 </rss>
