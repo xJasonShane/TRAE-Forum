@@ -5,7 +5,91 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Thu, 26 Nov 2026 00:04:36 +0000</lastBuildDate>
+<lastBuildDate>Thu, 26 Nov 2026 10:39:18 +0000</lastBuildDate>
+<item>
+<title>微软MAI-Code-2.1模型Arena盲测榜取得优异成绩</title>
+<link>https://forum.trae.cn/t/topic/605850</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605850</guid>
+<pubDate>Thu, 26 Nov 2026 10:30:04 +0000</pubDate>
+<category>AI充电站</category>
+<description></description>
+</item>
+<item>
+<title>为了第三期作业，我做了个简易版mc</title>
+<link>https://forum.trae.cn/t/topic/605838</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605838</guid>
+<pubDate>Thu, 26 Nov 2026 09:44:12 +0000</pubDate>
+<category>互动交流</category>
+<description>汇报一下，目前迭代三轮，总耗费积分988.15 
+已实现功能： 
+
+游戏核心框架
+常见方块元素
+昼夜变更
+水、玻璃等
+破坏掉落物与放置
+背包功能
+
+待实现功能： 
+
+合成+工作台
+手臂展示
+破坏进度
+主页面美化
+世界创建柏林噪声算法
+联机功…</description>
+</item>
+<item>
+<title>让 Hy4 flash 吐字提速 4.2 倍，混元 DFly2 开源</title>
+<link>https://forum.trae.cn/t/topic/605792</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605792</guid>
+<pubDate>Thu, 26 Nov 2026 07:36:23 +0000</pubDate>
+<category>AI充电站</category>
+<description>公众号：https://mp.weixin.qq.com/s/d1HMHrSEChCJiBRZ0tNOyg 
+  
+ 
+ 
+ 
+ 
+开源地址： 
+
+
+GitHub：GitHub - Tencent/AngelSpec: A unified,…</description>
+</item>
+<item>
+<title>3.4.25版本会话积分消耗消失，用量管理失效</title>
+<link>https://forum.trae.cn/t/topic/605785</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605785</guid>
+<pubDate>Thu, 26 Nov 2026 07:24:24 +0000</pubDate>
+<category>问题求助</category>
+<description>不扯一堆没用的参数了，3.4.25版本，本地确认 
+会话结束积分显示消失，用量管理记录消失 
+本地稳定复现</description>
+</item>
+<item>
+<title>【TRAE更新日志】v3.4.25-2026 年 11 月 24 日</title>
+<link>https://forum.trae.cn/t/topic/605742</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605742</guid>
+<pubDate>Thu, 26 Nov 2026 05:14:25 +0000</pubDate>
+<category>互动交流</category>
+<description>新增功能
+
+支持在归档任务设置中按环境、项目和关键词筛选任务，并按项目批量删除归档任务；删除失败的任务可保留重试【灰度中】
+
+体验优化
+
+优化最近项目选择器的分页加载、滚动和菜单交互，并支持通过 Cmd/Ctrl 或 Option/Alt …</description>
+</item>
+<item>
+<title>关于本次抖音小游戏活动的个人见解</title>
+<link>https://forum.trae.cn/t/topic/605710</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605710</guid>
+<pubDate>Thu, 26 Nov 2026 02:39:03 +0000</pubDate>
+<category>互动交流</category>
+<description>昨天一直在打游戏，没太关注这个活动，只搞了一个简单demo，本来也想发帖，也被游戏打断了，今天看了看论坛，都在纠结软著问题。 
+对此我只想说，我曾经也是这样，纠结很多事，非要准备妥当才开始动手，这时候才发现，时间不会等你。 
+这次活动之所以…</description>
+</item>
 <item>
 <title>MiniMax老师，你别这样，我害怕</title>
 <link>https://forum.trae.cn/t/topic/605620</link>
@@ -429,63 +513,6 @@ PaddleOCR-VL-1.6</description>
 <pubDate>Thu, 12 Nov 2026 06:32:27 +0000</pubDate>
 <category>互动交流</category>
 <description></description>
-</item>
-<item>
-<title>关于AI小说各模型的亲自测试以及网上测评的综合体验</title>
-<link>https://forum.trae.cn/t/topic/601998</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/601998</guid>
-<pubDate>Thu, 12 Nov 2026 03:10:40 +0000</pubDate>
-<category>互动交流</category>
-<description>昨天一整天在打游戏，后台挂了一天的AI小说，测试了几个模型并且认真的看了很多实际测试，为了不受到测评榜的影响，我并没有按照评分高低来进行实验，而是依照性价比，文笔，逻辑性，前后文衔接等多方面进行了主观评价(免责声明：我并不是小说痴迷者，只是…</description>
-</item>
-<item>
-<title>Qwen4辜负众望的鹈鹕测试</title>
-<link>https://forum.trae.cn/t/topic/601952</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/601952</guid>
-<pubDate>Wed, 11 Nov 2026 15:18:32 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>【TRAE更新日志】v3.4.18-2026 年 11 月 10 日</title>
-<link>https://forum.trae.cn/t/topic/601950</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/601950</guid>
-<pubDate>Wed, 11 Nov 2026 14:45:36 +0000</pubDate>
-<category>互动交流</category>
-<description>新增功能
-
-支持在打开或创建项目时确认目录信任；未信任目录中的项目规则、技能、命令和 Hooks 不会加载，终端命令也不会运行。
-支持在 Agent Window 中直接编辑全局和项目 Hooks 配置，并可在读取或保存失败后重试。
-支持在…</description>
-</item>
-<item>
-<title>真正的炫富是拿Kimi-K3.1-Pro写小说</title>
-<link>https://forum.trae.cn/t/topic/601939</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/601939</guid>
-<pubDate>Wed, 11 Nov 2026 11:42:41 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>Qwen4已上线千问云，Token Plan已可以正式调用，马上正式发布</title>
-<link>https://forum.trae.cn/t/topic/593538</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/593538</guid>
-<pubDate>Wed, 11 Nov 2026 02:13:06 +0000</pubDate>
-<category>AI充电站</category>
-<description>官方文章： Qwen4，要来了 
-千问云Token Plan：Token Plan 模型订阅计划</description>
-</item>
-<item>
-<title>MiniMax-H3-Image正式开源发布，跻身生图SOTA队列</title>
-<link>https://forum.trae.cn/t/topic/559698</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/559698</guid>
-<pubDate>Tue, 10 Nov 2026 15:19:33 +0000</pubDate>
-<category>互动交流</category>
-<description>开源地址： MiniMaxAI/MiniMax-H3-Image · Hugging Face 
-公众号文章： MiniMax H3-Image 开源：让 4K 图像生成进入 10 秒时代 
-文本编码器Qwen3-VL，再一次伟大 
-  
-C…</description>
 </item>
 </channel>
 </rss>
