@@ -5,7 +5,24 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Thu, 26 Nov 2026 21:13:01 +0000</lastBuildDate>
+<lastBuildDate>Fri, 27 Nov 2026 04:00:06 +0000</lastBuildDate>
+<item>
+<title>拿你的原创Skill卖钱？阿里支付宝官方SkillPay实测感受</title>
+<link>https://forum.trae.cn/t/topic/605983</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605983</guid>
+<pubDate>Fri, 27 Nov 2026 03:05:39 +0000</pubDate>
+<category>技巧分享</category>
+<description>今天看到 数字生命卡兹克 博主的公众号文章，阿里支付宝官方做了一个Skill交易平台，在这上面可以直接售卖或购买原创Skill，基于此我个人亲自走了一遍全流程，只能说有优有劣。 
+首先说优点：官方保障，收支方便直接到款支付宝，上架轻松简单。 …</description>
+</item>
+<item>
+<title>似乎大家都忘了TRAE内置Figma这件事</title>
+<link>https://forum.trae.cn/t/topic/605949</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/605949</guid>
+<pubDate>Fri, 27 Nov 2026 02:49:07 +0000</pubDate>
+<category>互动交流</category>
+<description>很早之前的事了，印象中是半年前内置的</description>
+</item>
 <item>
 <title>DeepSeek全端上线预收费功能</title>
 <link>https://forum.trae.cn/t/topic/605909</link>
@@ -492,31 +509,6 @@ Qoder服务异常</description>
 <pubDate>Fri, 13 Nov 2026 09:28:33 +0000</pubDate>
 <category>AI充电站</category>
 <description></description>
-</item>
-<item>
-<title>马克杯太多也是一种烦恼</title>
-<link>https://forum.trae.cn/t/topic/602339</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/602339</guid>
-<pubDate>Fri, 13 Nov 2026 07:35:26 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>讯飞星尘MaaS限免多款OCR、Embedding模型，有需要的可以体验</title>
-<link>https://forum.trae.cn/t/topic/602148</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/602148</guid>
-<pubDate>Thu, 12 Nov 2026 14:00:34 +0000</pubDate>
-<category>互动交流</category>
-<description>网站： 讯飞星辰MaaS平台-官网 
-本地搭RAG，值得调用的Embedding模型： 
-
-Qwen3-Embedding-8B
-
-OCR模型： 
-
-HunyuanOCR
-DeepSeek-OCR
-PaddleOCR-VL-1.6</description>
 </item>
 </channel>
 </rss>
