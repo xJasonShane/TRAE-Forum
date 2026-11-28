@@ -5,7 +5,29 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Fri, 27 Nov 2026 22:35:08 +0000</lastBuildDate>
+<lastBuildDate>Sat, 28 Nov 2026 07:08:07 +0000</lastBuildDate>
+<item>
+<title>DeepSeek 9大开源仓库已进行版本更新，明确新模型即将上线！</title>
+<link>https://forum.trae.cn/t/topic/606332</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/606332</guid>
+<pubDate>Sat, 28 Nov 2026 06:06:10 +0000</pubDate>
+<category>互动交流</category>
+<description>预计下周之内出现新模型发布</description>
+</item>
+<item>
+<title>IDE板块SOLO模式重启概率性强制打开插件市场页面</title>
+<link>https://forum.trae.cn/t/topic/606305</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/606305</guid>
+<pubDate>Sat, 28 Nov 2026 02:10:06 +0000</pubDate>
+<category>问题求助</category>
+<description>你的运行环境（版本号「点击帮助-关于-复制」）： 
+
+TRAE CN 
+版本: 3.4.25 
+VSCode 版本: 1.107.1 
+提交: 798a733b4719fdc79dfaa1915bba53f0b4f081c3 
+日期: 20…</description>
+</item>
 <item>
 <title>Hy-MT3-30B-A3B 现已在 GGUF 中提供 🚀</title>
 <link>https://forum.trae.cn/t/topic/606209</link>
@@ -491,22 +513,6 @@ VSCode 版本: 1.107.1
 <pubDate>Wed, 18 Nov 2026 01:58:54 +0000</pubDate>
 <category>互动交流</category>
 <description></description>
-</item>
-<item>
-<title>各模型执行效率展示丨转载</title>
-<link>https://forum.trae.cn/t/topic/603775</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/603775</guid>
-<pubDate>Tue, 17 Nov 2026 10:38:08 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>退积分了，但是看样子是向上取整</title>
-<link>https://forum.trae.cn/t/topic/603485</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/603485</guid>
-<pubDate>Tue, 17 Nov 2026 06:54:52 +0000</pubDate>
-<category>互动交流</category>
-<description>昨天实验断线的积分0.67，向上取整了 :rofl:</description>
 </item>
 </channel>
 </rss>
