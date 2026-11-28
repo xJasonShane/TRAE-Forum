@@ -5,7 +5,15 @@
 <link>https://forum.trae.cn/u/JasonShane/summary</link>
 <description>JasonShane 发布于 TRAE 官方中文社区的最新帖子</description>
 <generator>TRAE-Forum</generator>
-<lastBuildDate>Sat, 28 Nov 2026 07:08:07 +0000</lastBuildDate>
+<lastBuildDate>Sat, 28 Nov 2026 16:44:21 +0000</lastBuildDate>
+<item>
+<title>AI编程就像一个潘多拉魔盒，一旦打开，便没有办法回头</title>
+<link>https://forum.trae.cn/t/topic/606381</link>
+<guid isPermaLink="true">https://forum.trae.cn/t/topic/606381</guid>
+<pubDate>Sat, 28 Nov 2026 09:57:09 +0000</pubDate>
+<category>互动交流</category>
+<description>这两天在看Godot的合并质量，截至目前Godot仍然坚持0 AI编写代码，并且全部否决AI PR，这不是一种固执，而是他们清晰的知道，一旦使用了AI，那么这个项目就没有人类真正能够读懂了，后续遇到的问题只能一次又一次的借助AI来改，但，这…</description>
+</item>
 <item>
 <title>DeepSeek 9大开源仓库已进行版本更新，明确新模型即将上线！</title>
 <link>https://forum.trae.cn/t/topic/606332</link>
@@ -503,14 +511,6 @@ VSCode 版本: 1.107.1
 <link>https://forum.trae.cn/t/topic/604473</link>
 <guid isPermaLink="true">https://forum.trae.cn/t/topic/604473</guid>
 <pubDate>Wed, 18 Nov 2026 02:10:11 +0000</pubDate>
-<category>互动交流</category>
-<description></description>
-</item>
-<item>
-<title>账号合并是好事，但出现问题也是我十天前的预言</title>
-<link>https://forum.trae.cn/t/topic/604465</link>
-<guid isPermaLink="true">https://forum.trae.cn/t/topic/604465</guid>
-<pubDate>Wed, 18 Nov 2026 01:58:54 +0000</pubDate>
 <category>互动交流</category>
 <description></description>
 </item>
